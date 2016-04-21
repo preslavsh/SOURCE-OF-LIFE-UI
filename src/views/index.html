@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>Source Of Life</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The project is controller of the automatic greenhouse called Source Of Life">
+    <meta name="author" content="Preslav">
+
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/round-about.css" rel="stylesheet">
+
+    <script src="./es6-shim/es6-shim.min.js"></script>
+    <script src="./systemjs/dist/system-polyfills.js"></script>
+    <script src="./angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <script src="./angular2/bundles/angular2-polyfills.js"></script>
+    <script src="./systemjs/dist/system.src.js"></script>
+    <script src="./rxjs/bundles/Rx.js"></script>
+    <script src="./angular2/bundles/angular2.dev.js"></script>
+
+    <script src="./angular2/bundles/http.js"></script>
+    <script src="./angular2/bundles/router.dev.js"></script>
+
+    <script>
+        System.config({
+            packages: {
+                dist: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('dist/main')
+                .then(null, console.error.bind(console));
+    </script>
+</head>
+
+<body>
+<sg-user-navigation-component>Loading...</sg-user-navigation-component>
+<div class="container">
+
+    <!-- Introduction Row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">About Us
+                <small>It's Nice to Meet You!</small>
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore
+                corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit
+                facere nisi expedita vel?</p>
+        </div>
+    </div>
+
+    <!-- Team Members Row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">Our Team</h2>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3>John Smith
+                <small>Job Title</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3>John Smith
+                <small>Job Title</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3>John Smith
+                <small>Job Title</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3>John Smith
+                <small>Job Title</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3>John Smith
+                <small>Job Title</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3>John Smith
+                <small>Job Title</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Your Website 2014</p>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+    </footer>
+
+</div>
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="javascripts/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="javascripts/bootstrap.min.js"></script>
+
+</body>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "server": {
+    "baseDir": ["src/views","src", "node_modules"]
+  }
+}
