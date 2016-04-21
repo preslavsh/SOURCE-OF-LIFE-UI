@@ -2,6 +2,6 @@ import {Component} from 'angular2/core';
 
 @Component({
     selector: 'sg-data-component',
-    template: '<h1>Data Component</h1>'
+    templateUrl: './templates/data.component.html'
 })
 export class DataComponent { }

@@ -28,7 +28,6 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                     core_1.Component({
                         selector: 'sg-user-navigation-component',
                         templateUrl: "./templates/user.navigation.component.html",
-                        styleUrls: ['styles/bootstrap.min.css'],
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }),
                     router_1.RouteConfig([

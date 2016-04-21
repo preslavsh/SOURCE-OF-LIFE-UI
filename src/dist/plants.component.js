@@ -24,7 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 PlantsComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-plants-component',
-                        template: '<h1>Plants Component</h1>'
+                        templateUrl: './templates/plants.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], PlantsComponent);

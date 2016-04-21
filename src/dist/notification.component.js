@@ -24,7 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 NotificationComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-notification-component',
-                        template: '<h1>Notification Component</h1>'
+                        templateUrl: './templates/notification.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], NotificationComponent);

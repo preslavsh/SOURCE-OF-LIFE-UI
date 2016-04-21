@@ -24,7 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 ShopComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-shop-component',
-                        template: '<h1>Shop Component</h1>'
+                        templateUrl: './templates/shop.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ShopComponent);

@@ -24,7 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 GreenHouseComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-greenhouse-component',
-                        template: '<h1>Greenhouse Component</h1>'
+                        templateUrl: './templates/greenhouse.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], GreenHouseComponent);

@@ -24,7 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 DataComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-data-component',
-                        template: '<h1>Data Component</h1>'
+                        templateUrl: './templates/data.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], DataComponent);
