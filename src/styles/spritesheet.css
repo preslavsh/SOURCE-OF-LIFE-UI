@@ -1,0 +1,191 @@
+.sprite {
+    background-image: url(../images/sprites.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#agropyron {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -5px;
+}
+
+#balm {
+    width: 200px;
+    height: 199px;
+    background-position: -215px -5px;
+}
+
+#basil {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -5px;
+}
+
+#beet {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -5px;
+}
+
+#broccoli {
+    width: 200px;
+    height: 200px;
+    background-position: -845px -5px;
+}
+
+#cabbage {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -215px;
+}
+
+#chard {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -215px;
+}
+
+#chives {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -215px;
+}
+
+#cilantro {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -215px;
+}
+
+#dill {
+    width: 200px;
+    height: 200px;
+    background-position: -845px -215px;
+}
+
+#fagopyrum {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -425px;
+}
+
+#fenugreek {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -425px;
+}
+
+#kale {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -425px;
+}
+
+#komatsuna {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -425px;
+}
+
+#lentil {
+    width: 200px;
+    height: 200px;
+    background-position: -845px -425px;
+}
+
+#lettuce {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -635px;
+}
+
+#linum {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -635px;
+}
+
+#mint {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -635px;
+}
+
+#nasturtium {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -635px;
+}
+
+#onion {
+    width: 200px;
+    height: 200px;
+    background-position: -845px -635px;
+}
+
+#oregano {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -845px;
+}
+
+#parsley {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -845px;
+}
+
+#pea {
+    width: 200px;
+    height: 199px;
+    background-position: -425px -845px;
+}
+
+#radish {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -845px;
+}
+
+#rucola {
+    width: 200px;
+    height: 199px;
+    background-position: -845px -845px;
+}
+
+#sage {
+    width: 200px;
+    height: 200px;
+    background-position: -1175px -5px;
+}
+
+#satureja {
+    width: 200px;
+    height: 200px;
+    background-position: -1055px -215px;
+}
+
+#sinapis {
+    width: 200px;
+    height: 199px;
+    background-position: -1055px -425px;
+}
+
+#sunflower {
+    width: 200px;
+    height: 200px;
+    background-position: -1055px -634px;
+}
+
+#thymus {
+    width: 200px;
+    height: 200px;
+    background-position: -1055px -844px;
+}
+
+#weed {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -1054px;
+}

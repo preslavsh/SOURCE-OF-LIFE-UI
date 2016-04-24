@@ -1,0 +1,28 @@
+
+.search_plant {
+    margin: 3%;
+    padding: 3%;
+    font-size: large;
+    height: 10%;
+    border: 1px solid #a9db2c;
+}
+
+.bnt-plant {
+    margin: 4% 0 4% 2%;
+    padding: 4% 5%;
+    color: white;
+    background-color: #a9db2c;
+    border: 1px solid #a9db2c;
+    border-radius: 7px;
+    font-size: large;
+}
+
+.dark-green {
+    color: #476b25;
+}
+
+@media only screen and (max-width: 768px) {
+    .hide-green {
+        visibility: hidden;
+    }
+}

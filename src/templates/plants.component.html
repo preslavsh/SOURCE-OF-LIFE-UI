@@ -1,34 +1,23 @@
 <div class="container">
-
-    <!-- Introduction Row -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">About Us
-                <small>It's Nice to Meet You!</small>
-            </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore
-                corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit
-                facere nisi expedita vel?</p>
+    <div style="padding-left: 35%;padding-right: 10%;">
+        <div style="display:flex;align-items:center;">
+            <img src="images/logo.jpg" alt="">
+            <h1 class="dark-green hide-green">Избери растение</h1>
         </div>
     </div>
-
-    <!-- Team Members Row -->
-    <div class="col-lg-12">
-        <h2 class="page-header">Our Team</h2>
-    </div>
+    <input placeholder="Въдете име на растение!" class="form-control search_plant" [(ngModel)]="nameFilter"
+           type="text"/>
     <div class="row">
-        <div *ngFor="#plant of service.plants" class="col-lg-4 col-sm-6 text-center">
-            <img class="img-circle img-responsive img-center" src="images/{{plant.en_name}}.png" alt="">
-            <h3>{{plant.name}}
-                <small>Job Title</small>
+        <div *ngFor="#plant of (service.plants|filterByName:nameFilter)" class="col-lg-4 col-sm-3 text-center">
+            <img class="img-circle img-responsive img-center sprite" id="{{plant.en_name}}" alt="">
+            <h3 class="dark-green">{{plant.name|sgCapitalCase}}
             </h3>
-            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            <button class="bnt-plant">Разгледай</button>
+            <button class="bnt-plant">Купи</button>
         </div>
     </div>
 
     <hr>
-
-    <!-- Footer -->
     <footer>
         <div class="row">
             <div class="col-lg-12">

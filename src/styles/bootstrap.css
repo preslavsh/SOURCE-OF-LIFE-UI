@@ -1143,7 +1143,7 @@ img {
 }
 .img-circle {
   border-radius: 50%;
-  border:1px solid green;
+  border:1px solid #a9db2c;
 }
 hr {
   margin-top: 20px;
@@ -1412,7 +1412,6 @@ a.bg-danger:focus {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eee;
 }
 ul,
 ol {

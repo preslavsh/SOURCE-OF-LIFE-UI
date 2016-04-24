@@ -1,4 +1,4 @@
-System.register(['angular2/core', './plants.service'], function(exports_1, context_1) {
+System.register(['angular2/core', './plants.service', "./pipes/capital.case.pipe", "./pipes/filter-by-name.pipe"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './plants.service'], function(exports_1, conte
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, plants_service_1;
+    var core_1, plants_service_1, capital_case_pipe_1, filter_by_name_pipe_1;
     var PlantsComponent;
     return {
         setters:[
@@ -19,17 +19,26 @@ System.register(['angular2/core', './plants.service'], function(exports_1, conte
             },
             function (plants_service_1_1) {
                 plants_service_1 = plants_service_1_1;
+            },
+            function (capital_case_pipe_1_1) {
+                capital_case_pipe_1 = capital_case_pipe_1_1;
+            },
+            function (filter_by_name_pipe_1_1) {
+                filter_by_name_pipe_1 = filter_by_name_pipe_1_1;
             }],
         execute: function() {
             PlantsComponent = (function () {
                 function PlantsComponent(service) {
                     this.service = service;
+                    this.nameFilter = "";
                 }
                 PlantsComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-plants-component',
                         templateUrl: './templates/plants.component.html',
-                        providers: [plants_service_1.PlantsService]
+                        styleUrls: ['./styles/plants_page_styles.css'],
+                        providers: [plants_service_1.PlantsService],
+                        pipes: [capital_case_pipe_1.CapitalCasePipe, filter_by_name_pipe_1.FilterByNamePipe]
                     }), 
                     __metadata('design:paramtypes', [plants_service_1.PlantsService])
                 ], PlantsComponent);
