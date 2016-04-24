@@ -15,6 +15,7 @@
 	  "call-forward-ref" :true,
 	  "life-cycle-hook": true,
 	  "pipe-transform-interface": true,
-	  "pipe-naming": [true, "kebab-case","sg"]
+	  "pipe-naming": [true, "kebab-case","sg"],
+	  "component-class-suffix":true
 	}
 }

@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', './plants.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,23 +10,28 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, plants_service_1;
     var PlantsComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (plants_service_1_1) {
+                plants_service_1 = plants_service_1_1;
             }],
         execute: function() {
             PlantsComponent = (function () {
-                function PlantsComponent() {
+                function PlantsComponent(service) {
+                    this.service = service;
                 }
                 PlantsComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-plants-component',
-                        templateUrl: './templates/plants.component.html'
+                        templateUrl: './templates/plants.component.html',
+                        providers: [plants_service_1.PlantsService]
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [plants_service_1.PlantsService])
                 ], PlantsComponent);
                 return PlantsComponent;
             }());
