@@ -108,7 +108,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "en_name": "linum"
                         },
                         {
-                            "name": "къдрове зеле",
+                            "name": "къдрaвo зеле",
                             "en_name": "kale"
                         },
                         {

@@ -90,7 +90,7 @@ export class PlantsService{
             "en_name":"linum"
         },
         {
-            "name":"къдрове зеле",
+            "name":"къдрaвo зеле",
             "en_name":"kale"
         },
         {

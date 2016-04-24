@@ -9,12 +9,13 @@
 
 .bnt-plant {
     margin: 4% 0 4% 2%;
-    padding: 4% 5%;
+    padding: 3% 6%;
     color: white;
     background-color: #a9db2c;
     border: 1px solid #a9db2c;
-    border-radius: 7px;
+    border-radius: 25px;
     font-size: large;
+    width:35%;
 }
 
 .dark-green {
