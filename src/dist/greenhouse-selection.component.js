@@ -38,19 +38,38 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
                     this._plantService = _plantService;
                     this.greenhouseService = greenhouseService;
                     this._routeParams = _routeParams;
-                    this.greenhouse = greenhouseService.greenhouses[0];
+                    this.areTheSame = false;
+                    this.hasNotPlant = true;
                 }
                 GreenHouseSelectionComponent.prototype.ngOnInit = function () {
                     var en_name = this._routeParams.get('en_name');
                     var p = this._plantService.getByEnName(en_name);
                     this.plant = new plant_1.Plant(p.name, p.en_name, p.dishes);
+                    this.greenhouse = this.greenhouseService.greenhouses[0];
+                    this.onChangeGreenHouse(this.greenhouseService.greenhouses[0].id);
                 };
                 GreenHouseSelectionComponent.prototype.goBack = function () {
                     window.history.back();
                 };
                 GreenHouseSelectionComponent.prototype.onChangeGreenHouse = function (value) {
-                    var ghouse = this.greenhouseService.getGreenHouse(parseInt(value.target.value));
+                    var ghouse = this.greenhouseService.getGreenHouse(parseInt(value));
+                    var havePlants = ghouse.plants && ghouse.plants.length !== 0;
+                    if (havePlants) {
+                        this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, ghouse.plants);
+                        this.areTheSame = (this.plant.en_name === this.greenhouse.plants[0].en_name);
+                    }
+                    else {
+                        this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, [new plant_1.Plant("", "")]);
+                        this.areTheSame = false;
+                    }
+                    this.hasNotPlant = !havePlants;
+                };
+                GreenHouseSelectionComponent.prototype.beginGrowing = function () {
+                    this.greenhouseService.replacePlant(this.greenhouse.id, this.plant);
+                    var ghouse = this.greenhouseService.getGreenHouse(this.greenhouse.id);
                     this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, ghouse.plants);
+                    this.hasNotPlant = false;
+                    this.areTheSame = true;
                 };
                 GreenHouseSelectionComponent = __decorate([
                     core_1.Component({

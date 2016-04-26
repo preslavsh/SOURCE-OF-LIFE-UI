@@ -2,11 +2,11 @@
   "name": "source-of-life",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js",
+    "start": "npm run lite",
     "concurent": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "lite": "npm run lite",
+    "lite": "lite-server",
     "typings": "typings"
   },
   "license": "ISC",
@@ -19,7 +19,6 @@
     "rxjs": "5.0.0-beta.2",
     "systemjs": "0.19.25",
     "tslint": "^3.7.4",
-    "zone": "^0.3.4",
     "zone.js": "^0.6.10"
   },
   "devDependencies": {

@@ -56,12 +56,23 @@ p {
 }
 
 .bnt-grow{
-    display: inline-block;
     padding: 4px 29px;
     margin: 20px 20px 20px 20%;
     color: white;
     background-color: #a9db2c;
     border: 1px solid #a9db2c;
+    border-radius: 25px;
+    font-size: large;
+    width: 58%;
+}
+
+
+.bnt-red{
+    padding: 4px 29px;
+    margin: 20px 20px 20px 20%;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
     border-radius: 25px;
     font-size: large;
     width: 58%;

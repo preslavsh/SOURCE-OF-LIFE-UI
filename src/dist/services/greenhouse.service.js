@@ -36,13 +36,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "id": 2,
                             "name": "Парник в дома",
-                            "plants": [{
-                                    "name": "маруля",
-                                    "en_name": "lettuce",
-                                    "description": "",
-                                    "ph": "6.0 - 7.0",
-                                    "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
-                                }]
+                            "plants": []
                         }
                     ];
                 }
@@ -51,6 +45,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 };
                 GreenhouseService.prototype.addPlant = function (id, plant) {
                     this.greenhouses.filter(function (g) { return g.id == id; })[0].plants.push(plant);
+                };
+                GreenhouseService.prototype.removePlant = function (id) {
+                    this.greenhouses.filter(function (g) { return g.id == id; })[0].plants.pop();
+                };
+                GreenhouseService.prototype.replacePlant = function (id, newPlant) {
+                    this.removePlant(id);
+                    this.addPlant(id, newPlant);
                 };
                 GreenhouseService = __decorate([
                     core_1.Injectable(), 
