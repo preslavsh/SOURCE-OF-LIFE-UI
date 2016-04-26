@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/router', "./plant-detail.component", "./greenhouse-selection.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1;
+    var core_1, router_1, plant_detail_component_1, greenhouse_selection_component_1;
     var UserNavigationComponent;
     return {
         setters:[
@@ -19,6 +19,12 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
             },
             function (router_1_1) {
                 router_1 = router_1_1;
+            },
+            function (plant_detail_component_1_1) {
+                plant_detail_component_1 = plant_detail_component_1_1;
+            },
+            function (greenhouse_selection_component_1_1) {
+                greenhouse_selection_component_1 = greenhouse_selection_component_1_1;
             }],
         execute: function() {
             UserNavigationComponent = (function () {
@@ -56,7 +62,17 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                             path: '/shop',
                             loader: function () { return System.import('dist/shop.component').then(function (m) { return m.ShopComponent; }); },
                             name: 'Shop'
-                        })
+                        }),
+                        {
+                            path: '/detail/:en_name',
+                            name: 'PlantDetail',
+                            component: plant_detail_component_1.PlantDetailComponent
+                        },
+                        {
+                            path: '/selection/:en_name',
+                            name: 'GreenhouseSelection',
+                            component: greenhouse_selection_component_1.GreenHouseSelectionComponent
+                        }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], UserNavigationComponent);

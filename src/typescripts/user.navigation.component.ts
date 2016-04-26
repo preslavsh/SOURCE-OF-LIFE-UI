@@ -5,6 +5,8 @@ import {PlantsComponent} from './plants.component';
 import {GreenHouseComponent} from './greenhouse.component';
 import {ShopComponent} from './shop.component';
 import {DataComponent} from './data.component'
+import {PlantDetailComponent} from "./plant-detail.component";
+import {GreenHouseSelectionComponent} from "./greenhouse-selection.component";
 declare var System:any;
 
 
@@ -39,7 +41,17 @@ declare var System:any;
         path: '/shop',
         loader: ()=>System.import('dist/shop.component').then(m=>m.ShopComponent),
         name: 'Shop'
-    })
+    }),
+    {
+        path: '/detail/:en_name',
+        name: 'PlantDetail',
+        component: PlantDetailComponent
+    },
+    {
+        path: '/selection/:en_name',
+        name: 'GreenhouseSelection',
+        component: GreenHouseSelectionComponent
+    }
 ])
 export class UserNavigationComponent {
 }

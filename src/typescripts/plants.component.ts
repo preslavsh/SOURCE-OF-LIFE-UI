@@ -1,7 +1,8 @@
 import {Component} from 'angular2/core';
-import {PlantsService} from './plants.service';
+import {PlantsService} from './services/plants.service';
 import {CapitalCasePipe} from "./pipes/capital.case.pipe";
 import {FilterByNamePipe} from "./pipes/filter-by-name.pipe";
+import {Router} from "angular2/router";
 
 @Component({
     selector: 'sg-plants-component',
@@ -13,6 +14,13 @@ import {FilterByNamePipe} from "./pipes/filter-by-name.pipe";
 export class PlantsComponent {
     public nameFilter:string = "";
 
-    constructor(public service:PlantsService) {
+    constructor(
+        private _router: Router,
+        public service:PlantsService) {
+    }
+
+    gotoDetail(en_name:string) {
+        let link = ['PlantDetail', { en_name:en_name  }];
+        this._router.navigate(link);
     }
 }

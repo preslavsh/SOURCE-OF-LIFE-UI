@@ -1,4 +1,4 @@
-System.register(['angular2/core', './plants.service', "./pipes/capital.case.pipe", "./pipes/filter-by-name.pipe"], function(exports_1, context_1) {
+System.register(['angular2/core', './services/plants.service', "./pipes/capital.case.pipe", "./pipes/filter-by-name.pipe", "angular2/router"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './plants.service', "./pipes/capital.case.pipe
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, plants_service_1, capital_case_pipe_1, filter_by_name_pipe_1;
+    var core_1, plants_service_1, capital_case_pipe_1, filter_by_name_pipe_1, router_1;
     var PlantsComponent;
     return {
         setters:[
@@ -25,13 +25,21 @@ System.register(['angular2/core', './plants.service', "./pipes/capital.case.pipe
             },
             function (filter_by_name_pipe_1_1) {
                 filter_by_name_pipe_1 = filter_by_name_pipe_1_1;
+            },
+            function (router_1_1) {
+                router_1 = router_1_1;
             }],
         execute: function() {
             PlantsComponent = (function () {
-                function PlantsComponent(service) {
+                function PlantsComponent(_router, service) {
+                    this._router = _router;
                     this.service = service;
                     this.nameFilter = "";
                 }
+                PlantsComponent.prototype.gotoDetail = function (en_name) {
+                    var link = ['PlantDetail', { en_name: en_name }];
+                    this._router.navigate(link);
+                };
                 PlantsComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-plants-component',
@@ -40,7 +48,7 @@ System.register(['angular2/core', './plants.service', "./pipes/capital.case.pipe
                         providers: [plants_service_1.PlantsService],
                         pipes: [capital_case_pipe_1.CapitalCasePipe, filter_by_name_pipe_1.FilterByNamePipe]
                     }), 
-                    __metadata('design:paramtypes', [plants_service_1.PlantsService])
+                    __metadata('design:paramtypes', [router_1.Router, plants_service_1.PlantsService])
                 ], PlantsComponent);
                 return PlantsComponent;
             }());

@@ -1,0 +1,68 @@
+.bnt-back {
+    display: inline-block;
+    padding: 4px 29px;
+    margin-right: 25px;
+    margin-left: 10px;
+    color: white;
+    background-color: #a9db2c;
+    border: 1px solid #a9db2c;
+    border-radius: 60px 25px 25px 60px;
+    font-size: large;
+    width: 12%;
+    float: left;
+}
+
+.btn-menu {
+    display: inline-block;
+    padding: 4px 29px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 40px;
+    color: white;
+    background-color: #a9db2c;
+    border: 1px solid #a9db2c;
+    border-radius: 25px;
+    font-size: large;
+    width: 45%;
+}
+
+.green-sel {
+    width: 47%;
+    display: inline
+}
+
+.next-div {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+}
+
+.content-green {
+    width: 400px;
+    height: 330px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .hide-back {
+        visibility: hidden;
+    }
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.bnt-grow{
+    display: inline-block;
+    padding: 4px 29px;
+    margin: 20px 20px 20px 20%;
+    color: white;
+    background-color: #a9db2c;
+    border: 1px solid #a9db2c;
+    border-radius: 25px;
+    font-size: large;
+    width: 58%;
+}

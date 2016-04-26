@@ -150,6 +150,9 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         }
                     ];
                 }
+                PlantsService.prototype.getByEnName = function (en_name) {
+                    return this.plants.filter(function (p) { return p.en_name === en_name; })[0];
+                };
                 PlantsService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [])
