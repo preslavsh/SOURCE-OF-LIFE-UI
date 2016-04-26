@@ -9,4 +9,9 @@ node_modules
 typings
 .idea
 
+codelyzer-config.json
+gulpfile.js
+tsconfig.json
+bs-config.json
+
 
