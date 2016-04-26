@@ -11,6 +11,11 @@ app.engine('html', require('ejs').renderFile);
 
 // Use application-level middleware for common functionality, including
 // logging, parsing, and session handling.
+app.use(require('morgan')('combined'));
+app.use(require('cookie-parser')());
+app.use(require('body-parser').urlencoded({extended: true}));
+app.use(require('express-session')({secret: 'prostotiq', resave: false, saveUninitialized: false}));
+
 app.use(express.static(path.join(__dirname, 'node_modules')));
 app.use(express.static(path.join(__dirname, 'src')));
 app.use(express.static(path.join(__dirname, 'public')));
