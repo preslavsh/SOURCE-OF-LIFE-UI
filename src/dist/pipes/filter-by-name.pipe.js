@@ -21,8 +21,10 @@ System.register(["angular2/core"], function(exports_1, context_1) {
             FilterByNamePipe = (function () {
                 function FilterByNamePipe() {
                 }
-                FilterByNamePipe.prototype.transform = function (allPlants, _a) {
-                    var filter = _a[0];
+                FilterByNamePipe.prototype.transform = function (allPlants, filter) {
+                    if (!filter && filter.lenght === 0) {
+                        return allPlants;
+                    }
                     return allPlants.filter(function (p) { return new RegExp("" + filter.toLowerCase()).test(p.name.toLowerCase()); });
                 };
                 FilterByNamePipe = __decorate([

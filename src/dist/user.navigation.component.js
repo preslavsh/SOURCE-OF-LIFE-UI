@@ -34,7 +34,7 @@ System.register(['angular2/core', 'angular2/router', "./plant-detail.component",
                     core_1.Component({
                         selector: 'sg-user-navigation-component',
                         templateUrl: "./templates/user.navigation.component.html",
-                        directives: [router_1.ROUTER_DIRECTIVES]
+                        directives: [router_1.ROUTER_DIRECTIVES],
                     }),
                     router_1.RouteConfig([
                         new router_1.AsyncRoute({

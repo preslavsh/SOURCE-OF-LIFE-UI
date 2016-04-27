@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES,AsyncRoute} from 'angular2/router';
+import {RouteConfig, ROUTER_DIRECTIVES,AsyncRoute,ROUTER_PROVIDERS} from 'angular2/router';
 import {NotificationComponent} from './notification.component';
 import {PlantsComponent} from './plants.component';
 import {GreenHouseComponent} from './greenhouse.component';
@@ -13,7 +13,7 @@ declare var System:any;
 @Component({
     selector: 'sg-user-navigation-component',
     templateUrl: `./templates/user.navigation.component.html`,
-    directives: [ROUTER_DIRECTIVES]
+    directives: [ROUTER_DIRECTIVES],
 })
 @RouteConfig([
     new AsyncRoute({
