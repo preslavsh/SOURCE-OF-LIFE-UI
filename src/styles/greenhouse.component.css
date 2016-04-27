@@ -1,0 +1,52 @@
+
+.btn-menu {
+    display: inline-block;
+    padding: 4px 29px;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: white;
+    background-color: #a9db2c;
+    border: 1px solid #a9db2c;
+    border-radius: 25px;
+    font-size: large;
+    width: 45%;
+}
+
+.green-sel {
+    width: 47%;
+    display: inline
+}
+
+.green-inp {
+    width: 39.5%;
+    display: inline
+}
+
+.next-div {
+    width: 500px;
+    margin:0 32% 0 32%;
+}
+
+.content-green {
+    width: 400px;
+    height: 330px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.bnt-grow{
+    padding: 4px 29px;
+    margin: 10px 11% 0 11%;
+    color: white;
+    background-color: #a9db2c;
+    border: 1px solid #a9db2c;
+    border-radius: 25px;
+    font-size: large;
+    width: 58%;
+}

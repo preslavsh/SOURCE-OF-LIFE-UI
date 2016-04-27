@@ -53,6 +53,9 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.removePlant(id);
                     this.addPlant(id, newPlant);
                 };
+                GreenhouseService.prototype.renameGreenhouse = function (id, name) {
+                    this.greenhouses.filter(function (p) { return p.id === id; })[0].name = name;
+                };
                 GreenhouseService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [])

@@ -39,4 +39,8 @@ export class GreenhouseService{
         this.removePlant(id);
         this.addPlant(id,newPlant);
     }
+
+    public renameGreenhouse(id:number,name:string){
+        this.greenhouses.filter(p=>p.id===id)[0].name=name;
+    }
 }

@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', "./services/plants.service", "./services/greenhouse.service", "./models/greenhouse", "./models/plant"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,23 +10,55 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, plants_service_1, greenhouse_service_1, greenhouse_1, plant_1;
     var GreenHouseComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (plants_service_1_1) {
+                plants_service_1 = plants_service_1_1;
+            },
+            function (greenhouse_service_1_1) {
+                greenhouse_service_1 = greenhouse_service_1_1;
+            },
+            function (greenhouse_1_1) {
+                greenhouse_1 = greenhouse_1_1;
+            },
+            function (plant_1_1) {
+                plant_1 = plant_1_1;
             }],
         execute: function() {
             GreenHouseComponent = (function () {
-                function GreenHouseComponent() {
+                function GreenHouseComponent(greenhouseService) {
+                    this.greenhouseService = greenhouseService;
+                    this.hasNotPlant = true;
+                    this.greenhouse = this.greenhouseService.greenhouses[0];
+                    this.onChangeGreenHouse(this.greenhouseService.greenhouses[0].id);
                 }
+                GreenHouseComponent.prototype.onChangeGreenHouse = function (value) {
+                    var ghouse = this.greenhouseService.getGreenHouse(parseInt(value));
+                    var havePlants = ghouse.plants && ghouse.plants.length !== 0;
+                    if (havePlants) {
+                        this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, ghouse.plants);
+                    }
+                    else {
+                        this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, [new plant_1.Plant("", "")]);
+                    }
+                    this.hasNotPlant = !havePlants;
+                };
+                GreenHouseComponent.prototype.saveGreenhouseName = function () {
+                    this.greenhouseService.renameGreenhouse(this.greenhouse.id, this.greenhouse.name);
+                };
                 GreenHouseComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-greenhouse-component',
-                        templateUrl: './templates/greenhouse.component.html'
+                        templateUrl: './templates/greenhouse.component.html',
+                        styleUrls: ['styles/greenhouse.component.css'],
+                        providers: [greenhouse_service_1.GreenhouseService, plants_service_1.PlantsService]
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [greenhouse_service_1.GreenhouseService])
                 ], GreenHouseComponent);
                 return GreenHouseComponent;
             }());
