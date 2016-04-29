@@ -38,3 +38,24 @@ p{
     margin: 0;
     padding: 0;
 }
+
+.item-width{
+    width:600px;
+}
+
+@media only screen and (max-width: 768px) {
+    .p-width {
+        width:200px;
+    }
+}
+
+.bnt-red{
+    padding: 4px 29px;
+    margin: 20px 20px 20px 20%;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 25px;
+    font-size: large;
+    width: 58%;
+}

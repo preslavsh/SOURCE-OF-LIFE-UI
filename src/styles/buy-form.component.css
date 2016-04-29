@@ -16,15 +16,15 @@
 
 .btn-menu{
     padding: 4px 29px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 28%;
+    margin-right: 28%;
     margin-top:40px;
     color: white;
     background-color: #a9db2c;
     border: 1px solid #a9db2c;
     border-radius: 25px;
     font-size: large;
-    width:40%;
+    width:45%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -40,11 +40,13 @@ p{
 
 .bnt-red{
     padding: 4px 29px;
-    margin: 20px 20px 20px 20%;
+    margin-top:40px;
+    margin-left: 28%;
+    margin-right: 28%;
     color: white;
     background-color: red;
     border: 1px solid red;
     border-radius: 25px;
     font-size: large;
-    width: 68%;
+    width: 55%;
 }

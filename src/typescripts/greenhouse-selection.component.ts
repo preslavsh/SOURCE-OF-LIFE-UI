@@ -4,6 +4,7 @@ import {PlantsService} from './services/plants.service';
 import {RouteParams} from 'angular2/router';
 import {Plant} from "./models/plant";
 import {Greenhouse} from "./models/greenhouse";
+import {Router} from "angular2/router";
 
 @Component({
     selector: "sg-greenhouse-selection",
@@ -20,7 +21,8 @@ export class GreenHouseSelectionComponent implements OnInit {
 
     constructor(private _plantService:PlantsService,
                 public  greenhouseService:GreenhouseService,
-                private _routeParams:RouteParams) {
+                private _routeParams:RouteParams,
+                private _router:Router) {
     }
 
     ngOnInit() {
@@ -54,5 +56,11 @@ export class GreenHouseSelectionComponent implements OnInit {
         this.greenhouse = new Greenhouse(ghouse.id, ghouse.name, ghouse.plants);
         this.hasNotPlant=false;
         this.areTheSame=true;
+    }
+
+
+    buy(){
+        let link = ['Shop'];
+        this._router.navigate(link);
     }
 }

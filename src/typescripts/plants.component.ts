@@ -23,4 +23,10 @@ export class PlantsComponent {
         let link = ['PlantDetail', { en_name:en_name  }];
         this._router.navigate(link);
     }
+
+
+    buy(en_name:string){
+        let link = ['BuyForm', { en_name:en_name  }];
+        this._router.navigate(link);
+    }
 }

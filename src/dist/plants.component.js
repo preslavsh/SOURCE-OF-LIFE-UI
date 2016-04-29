@@ -40,6 +40,10 @@ System.register(['angular2/core', './services/plants.service', "./pipes/capital.
                     var link = ['PlantDetail', { en_name: en_name }];
                     this._router.navigate(link);
                 };
+                PlantsComponent.prototype.buy = function (en_name) {
+                    var link = ['BuyForm', { en_name: en_name }];
+                    this._router.navigate(link);
+                };
                 PlantsComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-plants-component',

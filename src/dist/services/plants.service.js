@@ -24,6 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "босилек",
                             "en_name": "basil",
+                            "category": "plant",
                             "description": "\u0411\u043E\u0441\u0438\u043B\u0435\u043A\u044A\u0442 (Ocimum basilicum),\n                \u0438\u0437\u0432\u0435\u0441\u0442\u0435\u043D \u043E\u0449\u0435 \u043A\u0430\u0442\u043E \u201E\u0446\u0430\u0440\u0441\u043A\u0430 \u0431\u0438\u043B\u043A\u0430\u201C (\u043E\u0442 \u0433\u0440. basilicum \u2014 \u0446\u0430\u0440\u0441\u043A\u0438),\n                \u0435 \u0435\u0434\u043D\u043E\u0433\u043E\u0434\u0438\u0448\u043D\u043E \u0442\u0440\u0435\u0432\u0438\u0441\u0442\u043E \u0440\u0430\u0441\u0442\u0435\u043D\u0438\u0435 \u0441 \u0433\u043E\u043B\u043E \u0447\u0435\u0442\u0438\u0440\u0438\u0440\u044A\u0431\u0435\u0441\u0442\u043E \u0441\u0442\u044A\u0431\u043B\u043E.\n                \u0420\u0430\u0437\u043A\u043B\u043E\u043D\u0435\u043D\u043E \u0434\u043E\u0441\u0442\u0438\u0433\u0430 \u0434\u043E \u0432\u0438\u0441\u043E\u0447\u0438\u043D\u0430 60 cm. \u041B\u0438\u0441\u0442\u0430\u0442\u0430 \u043C\u0443 \u0441\u0430 \u044F\u0439\u0446\u0435\u0432\u0438\u0434\u043D\u043E-\u043F\u0440\u043E\u0434\u044A\u043B\u0433\u043E\u0432\u0430\u0442\u0438\n                \u0441 \u0434\u044A\u043B\u0433\u0438 \u0434\u0440\u044A\u0436\u043A\u0438 \u0438 \u0437\u0430\u043E\u0441\u0442\u0440\u0435\u043D\u0438 \u0432 \u043A\u0440\u0430\u044F. \u0426\u0432\u0435\u0442\u043E\u0432\u0435\u0442\u0435 \u0441\u0430 \u043F\u0440\u0435\u0434\u0438\u043C\u043D\u043E \u0431\u0435\u043B\u0438, \u043C\u043D\u043E\u0433\u043E \u0440\u044F\u0434\u043A\u043E\n                \u043B\u0438\u043B\u0430\u0432\u043E-\u0431\u0435\u043B\u0438 \u0438\u043B\u0438 \u0447\u0435\u0440\u0432\u0435\u043D\u0438. \u041F\u043B\u043E\u0434\u043E\u0432\u0435\u0442\u0435 \u0441\u0430 \u0441\u0443\u0445\u0438 \u0438 \u0441\u043B\u0435\u0434 \u043A\u0430\u0442\u043E \u0443\u0437\u0440\u0435\u044F\u0442 \u0441\u0435 \u0440\u0430\u0437\u043F\u0430\u0434\u0430\u0442\n                \u043D\u0430 \u0447\u0435\u0442\u0438\u0440\u0438 \u043C\u0430\u043B\u043A\u0438 \u0441\u0435\u043C\u0435\u043D\u0446\u0430. \u0426\u044A\u0444\u0442\u0438 \u043E\u0442 \u044E\u043D\u0438 \u0434\u043E \u0441\u0435\u043F\u0442\u0435\u043C\u0432\u0440\u0438. \u041A\u0430\u0442\u043E \u0431\u0438\u043B\u043A\u0430 \u0438 \u043F\u043E\u0434\u043F\u0440\u0430\u0432\u043A\u0430\n                \u0441\u0435 \u0438\u0437\u043F\u043E\u043B\u0437\u0432\u0430 \u043D\u0430\u0434\u0437\u0435\u043C\u043D\u0430\u0442\u0430 \u0447\u0430\u0441\u0442 \u043D\u0430 \u0440\u0430\u0441\u0442\u0435\u043D\u0438\u0435\u0442\u043E, \u043D\u0430\u0439-\u0447\u0435\u0441\u0442\u043E \u0441\u0442\u0440\u044A\u043A\u043E\u0432\u0435\u0442\u0435 \u0432 \u043F\u0440\u0435\u0441\u0435\u043D\n                \u0432\u0438\u0434, \u043A\u0430\u0442\u043E \u0441\u0435 \u0431\u0435\u0440\u0435 \u043F\u043E \u0432\u0440\u0435\u043C\u0435 \u043D\u0430 \u0446\u044A\u0444\u0442\u0435\u0436\u0430, \u0430 \u0437\u0430 \u0441\u0443\u0448\u0435\u043D\u0435 \u2014 \u043F\u0440\u0435\u0434\u0438 \u0446\u044A\u0444\u0442\u0435\u0436\u0430.\n                \u0421\u044A\u0434\u044A\u0440\u0436\u0430 \u0435\u0442\u0435\u0440\u0438\u0447\u043D\u043E \u043C\u0430\u0441\u043B\u043E, \u0433\u043E\u0440\u0447\u0438\u0432\u043E \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u043E, \u0433\u043B\u0438\u043A\u043E\u0437\u0438\u0434\u0438, \u0442\u0430\u043D\u0438\u043D\u0438, \u043E\u0440\u0433\u0430\u043D\u0438\u0447\u043D\u0438 \u043A\u0438\u0441\u0435\u043B\u0438\u043D\u0438,\n                \u043C\u0438\u043D\u0435\u0440\u0430\u043B\u043D\u0438 \u0441\u043E\u043B\u0438. \u0420\u043E\u0434\u0438\u043D\u0430 \u043D\u0430 \u0431\u043E\u0441\u0438\u043B\u0435\u043A\u0430 \u0441\u0430 \u0442\u0440\u043E\u043F\u0438\u0446\u0438\u0442\u0435 \u043D\u0430 \u0410\u0437\u0438\u044F \u0438 \u0410\u0444\u0440\u0438\u043A\u0430.\n                \u041E\u0442\u0433\u043B\u0435\u0436\u0434\u0430 \u0441\u0435 \u043A\u0443\u043B\u0442\u0443\u0440\u043D\u043E \u0432 \u0415\u0432\u0440\u043E\u043F\u0430 \u043E\u0442 \u0432\u0435\u043A\u043E\u0432\u0435.",
                             "ph": "5.5 - 6.5",
                             "sun": "Пълно слънце",
@@ -33,6 +34,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "мента",
                             "en_name": "mint",
+                            "category": "plant",
                             "description": "\u041C\u0435\u043D\u0442\u0430 (Mentha) \u0435 \u0440\u043E\u0434 \u043C\u043D\u043E\u0433\u043E\u0433\u043E\u0434\u0438\u0448\u043D\u0438\n            \u0442\u0440\u0435\u0432\u0438\u0441\u0442\u0438 \u0440\u0430\u0441\u0442\u0435\u043D\u0438\u044F \u043E\u0442 \u0441\u0435\u043C\u0435\u0439\u0441\u0442\u0432\u043E \u0423\u0441\u0442\u043D\u043E\u0446\u0432\u0435\u0442\u043D\u0438. \u0420\u0430\u0437\u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0435\u043D\u0430\n            \u0435 \u0433\u043B\u0430\u0432\u043D\u043E \u0432 \u0441\u0435\u0432\u0435\u0440\u043D\u0438\u044F \u0443\u043C\u0435\u0440\u0435\u043D \u043F\u043E\u044F\u0441. \u0412 \u0411\u044A\u043B\u0433\u0430\u0440\u0438\u044F \u0441\u0435 \u0441\u0440\u0435\u0449\u0430\u0442 \u043E\u043A\u043E\u043B\u043E\n            9 \u0432\u0438\u0434\u0430 \u0441 \u043C\u043D\u043E\u0433\u043E\u0431\u0440\u043E\u0439\u043D\u0438 \u0432\u0430\u0440\u0438\u0430\u0446\u0438\u0438, \u043E\u0442 \u043A\u043E\u0438\u0442\u043E \u0441\u0435 \u043E\u0442\u0433\u043B\u0435\u0436\u0434\u0430 M. piperita\n            \u2013 \u0447\u0435\u0440\u043D\u0430 \u043C\u0435\u043D\u0442\u0430 \u0438 \u0434\u0436\u043E\u0434\u0436\u0435\u043D \u2013 M. spicata. \u0421\u0442\u044A\u0431\u043B\u043E\u0442\u043E \u0435 \u043A\u043B\u043E\u043D\u0435\u0441\u0442\u043E,\n            \u0432\u0438\u0441\u043E\u043A\u043E \u043E\u043A\u043E\u043B\u043E 0,70 m, \u0447\u0435\u0442\u0438\u0440\u0438\u0440\u044A\u0431\u0435\u0441\u0442\u043E, \u043B\u0438\u0441\u0442\u0430\u0442\u0430 \u0441\u0430 \u043F\u0440\u043E\u0441\u0442\u0438,\n            \u043F\u0440\u043E\u0434\u044A\u043B\u0433\u043E\u0432\u0430\u0442\u0438, \u043E\u0441\u0442\u0440\u043E \u043D\u0430\u0437\u044A\u0431\u0435\u043D\u0438. \u0426\u0432\u0435\u0442\u043E\u0432\u0435\u0442\u0435 \u0441\u0430 \u0447\u0435\u0440\u0432\u0435\u043D\u0438\u043A\u0430\u0432\u043E\u0432\u0438\u043E\u043B\u0435\u0442\u043E\u0432\u0438,\n            \u0441\u044A\u0431\u0440\u0430\u043D\u0438 \u0432 \u043A\u043B\u0430\u0441\u043E\u0432\u0438\u0434\u043D\u0438 \u0441\u044A\u0446\u0432\u0435\u0442\u0438\u044F; \u0441\u0435\u043C\u0435\u043D\u0430\u0442\u0430 \u0441\u0430 \u0434\u0440\u0435\u0431\u043D\u0438.\n            \u0412\u0441\u0438\u0447\u043A\u0438 \u043D\u0430\u0434\u0437\u0435\u043C\u043D\u0438 \u0447\u0430\u0441\u0442\u0438 \u043D\u0430 \u0440\u0430\u0441\u0442\u0435\u043D\u0438\u0435\u0442\u043E \u0441\u044A\u0434\u044A\u0440\u0436\u0430\u0442 \u0435\u0442\u0435\u0440\u0438\u0447\u043D\u043E\n            \u043C\u0430\u0441\u043B\u043E \u0441 \u0433\u043B\u0430\u0432\u043D\u0430 \u0441\u044A\u0441\u0442\u0430\u0432\u043D\u0430 \u0447\u0430\u0441\u0442 \u043C\u0435\u043D\u0442\u043E\u043B (45-65%). \u041E\u0442 \u043D\u0430\u0434\u0437\u0435\u043C\u043D\u0430\u0442\u0430 \u043C\u0430\u0441\u0430,\n            \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0430 \u043E\u0442 1 \u0434\u0435\u043A\u0430\u0440, \u043F\u0440\u0438\u0431\u0440\u0430\u043D\u0430 \u0432 \u043F\u044A\u043B\u0435\u043D \u0446\u044A\u0444\u0442\u0435\u0436 \u043F\u0440\u0435\u0437 \u0441\u043B\u044A\u043D\u0447\u0435\u0432\u043E \u0432\u0440\u0435\u043C\u0435,\n            \u0441\u0435 \u043F\u043E\u043B\u0443\u0447\u0430\u0432\u0430 \u043F\u0440\u0438 \u043F\u0430\u0440\u043D\u0430 \u0434\u0435\u0441\u0442\u0438\u043B\u0430\u0446\u0438\u044F \u043E\u043A\u043E\u043B\u043E 3-5  kg \u0435\u0442\u0435\u0440\u0438\u0447\u043D\u043E \u043C\u0430\u0441\u043B\u043E.\n            \u0412 \u0411\u044A\u043B\u0433\u0430\u0440\u0438\u044F \u0441\u0435 \u043A\u0443\u043B\u0442\u0438\u0432\u0438\u0440\u0430 \u043F\u043E \u043F\u043E\u0440\u0435\u0447\u0438\u044F\u0442\u0430 \u043D\u0430 \u0440\u0435\u043A\u0438\u0442\u0435 \u041C\u0430\u0440\u0438\u0446\u0430, \u0422\u0443\u043D\u0434\u0436\u0430,\n            \u0412\u0438\u0442 \u0438 \u0434\u0440. \u0418\u0437\u043F\u043E\u043B\u0437\u0432\u0430\u043D\u0435\u0442\u043E \u043D\u0430 \u043C\u0435\u043D\u0442\u0430\u0442\u0430 \u043A\u0430\u0442\u043E \u0430\u043B\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u043D\u0430 \u043A\u0443\u043B\u0442\u0443\u0440\u0430 \u0441\u0435\n            \u0441\u044A\u0441\u0442\u043E\u0438 \u0432 \u043C\u0435\u043D\u0442\u043E\u0432 \u043B\u0438\u0441\u0442, \u043F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D \u0437\u0430 \u0438\u0437\u043D\u043E\u0441 \u0438\u043B\u0438 \u0437\u0430 \u0443\u043F\u043E\u0442\u0440\u0435\u0431\u0430\n            \u043A\u0430\u0442\u043E \u0442\u0440\u0430\u043F\u0435\u0437\u0435\u043D \u0447\u0430\u0439. \u041F\u0440\u0438 \u043F\u043E\u0434\u0445\u043E\u0434\u044F\u0449\u0430 \u0430\u0433\u0440\u043E\u0442\u0435\u0445\u043D\u0438\u043A\u0430 \u0438 \u043D\u0435\u043F\u043E\u043B\u0438\u0432\u043D\u0438 \u0443\u0441\u043B\u043E\u0432\u0438\u044F,\n            \u0434\u043E\u0431\u0438\u0432\u0438\u0442\u0435 \u0441\u0430 \u043E\u043A\u043E\u043B\u043E 150 \u2013 200 kg/da. \u041F\u0440\u0438 \u0444\u0430\u043C\u0438\u043B\u043D\u0438 \u043F\u043B\u043E\u0449\u0438 \u0441 \u043C\u0430\u043B\u044A\u043A \u0440\u0430\u0437\u043C\u0435\u0440\n            \u0438 \u043C\u043D\u043E\u0433\u043E \u0434\u043E\u0431\u0440\u043E \u0442\u043E\u0440\u0435\u043D\u0435 \u0438 \u043F\u043E\u043B\u0438\u0432\u0430\u043D\u0435, \u0434\u043E\u0431\u0438\u0432\u0438\u0442\u0435 \u0441\u0430 \u043D\u0430\u0434 300 kg/da. \u0417\u0430 \u0444\u0430\u043C\u0438\u043B\u043D\u0438\n            \u0442\u0435\u0440\u0435\u043D\u0438 \u043E\u043F\u0442\u0438\u043C\u0443\u043C\u044A\u0442 \u0435 10 \u2013 50 da. \u041F\u0440\u0438 \u0434\u043E\u0431\u0438\u0432 400 kg \u0441\u0443\u0445 \u043C\u0435\u043D\u0442\u043E\u0432 \u043B\u0438\u0441\u0442 \u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u0435\n            \u0441\u0430 \u043E\u0442 \u043F\u043E\u0440\u044F\u0434\u044A\u043A\u0430 \u043D\u0430 640 \u2013 800 \u043B\u0432. \u0431\u0440\u0443\u0442\u043E \u0434\u043E\u0445\u043E\u0434 \u043E\u0442 \u0434\u0435\u043A\u0430\u0440, \u0432 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442 \u043E\u0442 \u0446\u0435\u043D\u0430\u0442\u0430\n            \u043D\u0430 \u0438\u0437\u043A\u0443\u043F\u0443\u0432\u0430\u043D\u0435 \u043F\u043E \u0432\u0440\u0435\u043C\u0435 \u043D\u0430 \u0441\u0435\u0437\u043E\u043D\u0430.",
                             "ph": "7.0 - 8.0",
                             "dishes": [{ name: 'Мохито', img_name: "mohito.png" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -40,6 +42,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "репичка",
                             "en_name": "radish",
+                            "category": "plant",
                             "description": "",
                             "ph": "6.0 - 7.0",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -47,6 +50,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "магданоз",
                             "en_name": "parsley",
+                            "category": "plant",
                             "description": "",
                             "ph": "5.0 - 7.0",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -54,11 +58,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "риган",
                             "en_name": "oregano",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "лук",
                             "en_name": "onion",
+                            "category": "plant",
                             "description": "",
                             "ph": "6.0 - 7.0",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -66,16 +72,19 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "латинка",
                             "en_name": "nasturtium",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "синап",
                             "en_name": "sinapis",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "мащерка",
                             "en_name": "thymus",
+                            "category": "plant",
                             "description": "",
                             "ph": "5.5 - 7.0",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -83,27 +92,32 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "манголд",
                             "en_name": "chard",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "слънчоглед",
                             "en_name": "sunflower",
+                            "category": "plant",
                             "specific": "sprout",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "чубрица",
                             "en_name": "satureja",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "житняк",
                             "en_name": "agropyron",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "sage",
                             "en_name": "sage",
+                            "category": "plant",
                             "description": "",
                             "ph": "5.5 - 6.5",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -111,6 +125,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "грах",
                             "en_name": "pea",
+                            "category": "plant",
                             "specific": "sprout",
                             "description": "",
                             "ph": "6.0 - 7.5",
@@ -119,6 +134,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "маруля",
                             "en_name": "lettuce",
+                            "category": "plant",
                             "description": "",
                             "ph": "6.0 - 7.0",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -126,6 +142,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "леща",
                             "en_name": "lentil",
+                            "category": "plant",
                             "description": "",
                             "ph": "5.5 - 7.0",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -133,26 +150,31 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "маточина",
                             "en_name": "balm",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "komatsuna",
                             "en_name": "komatsuna",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "сминдух",
                             "en_name": "fenugreek",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "лен",
                             "en_name": "linum",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "къдрaвo зеле",
                             "en_name": "kale",
+                            "category": "plant",
                             "description": "",
                             "ph": "6.0 - 7.5",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -160,11 +182,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "копър",
                             "en_name": "dill",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "сибирски лук",
                             "en_name": "chives",
+                            "category": "plant",
                             "description": "",
                             "ph": "6.0 - 7.0",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -172,11 +196,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "кориандър",
                             "en_name": "cilantro",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "зеле",
                             "en_name": "cabbage",
+                            "category": "plant",
                             "description": "",
                             "ph": "6.0 - 7.5",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -184,11 +210,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "елда",
                             "en_name": "fagopyrum",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "броколи",
                             "en_name": "broccoli",
+                            "category": "plant",
                             "description": "",
                             "ph": "6.0 - 7.0",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
@@ -196,17 +224,20 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         {
                             "name": "цвекло",
                             "en_name": "beet",
+                            "category": "plant",
                             "specific": "sprout",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "рукола",
                             "en_name": "rucola",
+                            "category": "plant",
                             "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "марихуана",
                             "en_name": "weed",
+                            "category": "plant",
                             "dishes": [{ name: 'Коз', img_name: "joint.jpg" }, { name: 'Бонг', img_name: "bong.jpg" }]
                         }
                     ];

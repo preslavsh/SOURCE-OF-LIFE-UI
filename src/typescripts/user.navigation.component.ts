@@ -7,6 +7,9 @@ import {ShopComponent} from './shop.component';
 import {DataComponent} from './data.component'
 import {PlantDetailComponent} from "./plant-detail.component";
 import {GreenHouseSelectionComponent} from "./greenhouse-selection.component";
+import {ShopPlantDetailComponent} from './shop-plant-detail.component';
+import {ShopOtherDetailComponent} from './shop-other-detail.component';
+import {BuyFormComponent} from "./buy-form.component";
 declare var System:any;
 
 
@@ -51,6 +54,21 @@ declare var System:any;
         path: '/selection/:en_name',
         name: 'GreenhouseSelection',
         component: GreenHouseSelectionComponent
+    },
+    {
+        path: '/shop/plant/:en_name',
+        name: 'ShopPlantDetail',
+        component: ShopPlantDetailComponent
+    },
+    {
+        path: '/shop/other/:en_name',
+        name: 'ShopOtherDetail',
+        component: ShopOtherDetailComponent
+    },
+    {
+        path: '/shop/buy/:en_name',
+        name: 'BuyForm',
+        component: BuyFormComponent
     }
 ])
 export class UserNavigationComponent {

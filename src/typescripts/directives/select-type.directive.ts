@@ -1,17 +1,18 @@
-import {Component,Output,EventEmitter} from '../../../node_modules/angular2/core.d';
-import {OnInit} from "../../../node_modules/angular2/core.d";
+import {Component,Output,EventEmitter,OnInit} from 'angular2/core';
 
 @Component({
     selector: "sg-select-type",
     template: `
-        <select #sel (change)="select.emit($event.target.value)">
+        <select #sel (change)="select.emit($event.target.value)" class="form-control search_plant sel-plant block-display filter-width">
              <option *ngFor="#type of types" value="{{type.value}}">{{type.name}}</option>
         </select>
-    `
+    `,
+    styleUrls: ['./styles/shop.component.css']
 })
-export class SelectTypeComponent implements OnInit{
+export class SelectTypeDirective implements OnInit{
 
     @Output() select = new EventEmitter();
+
     public types:Array<any> = [
         {name: "Всички категории", value: "all"},
         {name: "Растения", value: "plant"},
@@ -20,6 +21,6 @@ export class SelectTypeComponent implements OnInit{
     ];
 
     ngOnInit(){
-        this.select.emit(this.types[0]);
+        this.select.emit(this.types[0].value);
     }
 }

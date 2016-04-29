@@ -17,20 +17,21 @@
         <p>6 часа</p>
     </div>
     <div class="next-div">
-        <select (change)="onChangeGreenHouse($event.target.value)" class="form-control green-sel" >
+        <select (change)="onChangeGreenHouse($event.target.value)" class="form-control green-sel">
             <option *ngFor="#ghouse of greenhouseService.greenhouses" [value]="ghouse.id">{{ghouse.name}}</option>
         </select>
-        <button class="btn-menu">Нов парник</button>
-        <div  class="content-green">
+        <button class="btn-menu" (click)="buy()">Нов парник</button>
+        <div class="content-green">
             <p [hidden]="hasNotPlant"><b>Отглежда се:</b></p>
-            <img [hidden]="hasNotPlant" class="img-circle img-center img-responsive sprite" id="{{greenhouse.plants[0].en_name}}" alt="">
+            <img [hidden]="hasNotPlant" class="img-circle img-center img-responsive sprite"
+                 id="{{greenhouse.plants[0].en_name}}" alt="">
             <p [hidden]="hasNotPlant"><b>Английско име</b></p>
             <p [hidden]="hasNotPlant">{{greenhouse.plants[0].en_name}}</p>
             <p [hidden]="hasNotPlant"><b>Българско име</b></p>
             <p [hidden]="hasNotPlant">{{greenhouse.plants[0].name}}</p>
             <p [hidden]="!hasNotPlant">Не се отглежда нищо в момента</p>
         </div>
-        <button [hidden]="areTheSame" class="bnt-grow" (click)="beginGrowing()" >Започни отглеждане</button>
-        <button [hidden]="!areTheSame" class="bnt-red" >Вече се отглежда</button>
+        <button [hidden]="areTheSame" class="bnt-grow" (click)="beginGrowing()">Започни отглеждане</button>
+        <button [hidden]="!areTheSame" class="bnt-red">Вече се отглежда</button>
     </div>
 </div>

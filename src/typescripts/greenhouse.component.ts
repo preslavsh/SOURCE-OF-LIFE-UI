@@ -3,6 +3,7 @@ import {PlantsService} from "./services/plants.service";
 import {GreenhouseService} from "./services/greenhouse.service";
 import {Greenhouse} from "./models/greenhouse";
 import {Plant} from "./models/plant";
+import {Router} from "angular2/router";
 
 @Component({
     selector: 'sg-greenhouse-component',
@@ -15,7 +16,8 @@ export class GreenHouseComponent {
     public greenhouse:Greenhouse;
     public hasNotPlant:boolean = true;
 
-    constructor(public  greenhouseService:GreenhouseService) {
+    constructor(public  greenhouseService:GreenhouseService,
+                private _router:Router) {
         this.greenhouse = this.greenhouseService.greenhouses[0];
         this.onChangeGreenHouse(this.greenhouseService.greenhouses[0].id);
     }
@@ -33,5 +35,15 @@ export class GreenHouseComponent {
 
     saveGreenhouseName(){
         this.greenhouseService.renameGreenhouse(this.greenhouse.id,this.greenhouse.name);
+    }
+
+    gotoPlants() {
+        let link = ['Plants'];
+        this._router.navigate(link);
+    }
+
+    buy(){
+        let link = ['Shop'];
+        this._router.navigate(link);
     }
 }

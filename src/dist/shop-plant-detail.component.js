@@ -11,7 +11,7 @@ System.register(['angular2/core', "./services/plants.service", "angular2/router"
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, plants_service_1, router_1, plant_1;
-    var PlantDetailComponent;
+    var ShopPlantDetailComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -27,40 +27,36 @@ System.register(['angular2/core', "./services/plants.service", "angular2/router"
                 plant_1 = plant_1_1;
             }],
         execute: function() {
-            PlantDetailComponent = (function () {
-                function PlantDetailComponent(_plantService, _routeParams, _router) {
+            ShopPlantDetailComponent = (function () {
+                function ShopPlantDetailComponent(_plantService, _routeParams, _router) {
                     this._plantService = _plantService;
                     this._routeParams = _routeParams;
                     this._router = _router;
                 }
-                PlantDetailComponent.prototype.ngOnInit = function () {
+                ShopPlantDetailComponent.prototype.ngOnInit = function () {
                     var en_name = this._routeParams.get('en_name');
                     var p = this._plantService.getByEnName(en_name);
                     this.plant = new plant_1.Plant(p.name, p.en_name, p.dishes);
                 };
-                PlantDetailComponent.prototype.goBack = function () {
+                ShopPlantDetailComponent.prototype.goBack = function () {
                     window.history.back();
                 };
-                PlantDetailComponent.prototype.gotoGreenhouseSelection = function (en_name) {
-                    var link = ['GreenhouseSelection', { en_name: en_name }];
-                    this._router.navigate(link);
-                };
-                PlantDetailComponent.prototype.buy = function (en_name) {
+                ShopPlantDetailComponent.prototype.buy = function (en_name) {
                     var link = ['BuyForm', { en_name: en_name }];
                     this._router.navigate(link);
                 };
-                PlantDetailComponent = __decorate([
+                ShopPlantDetailComponent = __decorate([
                     core_1.Component({
-                        selector: "sg-plant-detail-component",
-                        templateUrl: "templates/plant-detail.component.html",
+                        selector: "sg-shop-plant-detail-component",
+                        templateUrl: "templates/shop-plant-detail.component.html",
                         styleUrls: ['styles/plant-detail.component.css'],
                         providers: [plants_service_1.PlantsService]
                     }), 
                     __metadata('design:paramtypes', [plants_service_1.PlantsService, router_1.RouteParams, router_1.Router])
-                ], PlantDetailComponent);
-                return PlantDetailComponent;
+                ], ShopPlantDetailComponent);
+                return ShopPlantDetailComponent;
             }());
-            exports_1("PlantDetailComponent", PlantDetailComponent);
+            exports_1("ShopPlantDetailComponent", ShopPlantDetailComponent);
         }
     }
 });

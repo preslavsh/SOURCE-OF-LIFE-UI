@@ -1,10 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<form>
+    <div>
+        <button class="bnt-back hide-back" (click)="goBack()">Назад</button>
+        <div style="text-align: center;float: left;">
+            <img class="img-circle img-center img-responsive sprite" id="{{item.en_name}}" alt="">
+            <p><b>Английско име</b></p>
+            <p>{{item.en_name}}</p>
+            <p><b>Българско име</b></p>
+            <p>{{item.name}}</p>
 
-</body>
-</html>
+        </div>
+        <div style="display: inline-block;width: 400px;height: 400px;margin-left: 25px;">
+            <p><b>Град</b></p>
+            <select [(ngModel)]="city" class="form-control">
+                <option [value]="1">София</option>
+                <option [value]="2">Велико Търново</option>
+                <option [value]="3">Варна</option>
+                <option [value]="4">Пловдив</option>
+                <option [value]="5">Бургас</option>
+                <option [value]="6">Хасково</option>
+                <option [value]="7">Белоградчик</option>
+            </select>
+            <p><b>Адрес</b></p>
+            <input type="text" [(ngModel)]="address" class="form-control" required/>
+            <p><b>Брой</b></p>
+            <select [(ngModel)]="count" class="form-control">
+                <option [value]="1">1</option>
+                <option [value]="2">2</option>
+                <option [value]="3">3</option>
+                <option [value]="4">4</option>
+                <option [value]="5">5</option>
+            </select>
+            <input type="submit" [hidden]="hasOrdered" (click)="order(item.en_name);" class="btn-menu" value="Поръчай"/>
+            <button [hidden]="!hasOrdered" class="bnt-red">Вече е
+                поръчано
+            </button>
+        </div>
+    </div>
+</form>

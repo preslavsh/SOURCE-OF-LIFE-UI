@@ -10,7 +10,7 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, greenhouse_service_1, plants_service_1, router_1, plant_1, greenhouse_1;
+    var core_1, greenhouse_service_1, plants_service_1, router_1, plant_1, greenhouse_1, router_2;
     var GreenHouseSelectionComponent;
     return {
         setters:[
@@ -25,6 +25,7 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
             },
             function (router_1_1) {
                 router_1 = router_1_1;
+                router_2 = router_1_1;
             },
             function (plant_1_1) {
                 plant_1 = plant_1_1;
@@ -34,10 +35,11 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
             }],
         execute: function() {
             GreenHouseSelectionComponent = (function () {
-                function GreenHouseSelectionComponent(_plantService, greenhouseService, _routeParams) {
+                function GreenHouseSelectionComponent(_plantService, greenhouseService, _routeParams, _router) {
                     this._plantService = _plantService;
                     this.greenhouseService = greenhouseService;
                     this._routeParams = _routeParams;
+                    this._router = _router;
                     this.areTheSame = false;
                     this.hasNotPlant = true;
                 }
@@ -71,6 +73,10 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
                     this.hasNotPlant = false;
                     this.areTheSame = true;
                 };
+                GreenHouseSelectionComponent.prototype.buy = function () {
+                    var link = ['Shop'];
+                    this._router.navigate(link);
+                };
                 GreenHouseSelectionComponent = __decorate([
                     core_1.Component({
                         selector: "sg-greenhouse-selection",
@@ -78,7 +84,7 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
                         styleUrls: ['styles/greenhouse-selection.component.css'],
                         providers: [greenhouse_service_1.GreenhouseService, plants_service_1.PlantsService]
                     }), 
-                    __metadata('design:paramtypes', [plants_service_1.PlantsService, greenhouse_service_1.GreenhouseService, router_1.RouteParams])
+                    __metadata('design:paramtypes', [plants_service_1.PlantsService, greenhouse_service_1.GreenhouseService, router_1.RouteParams, router_2.Router])
                 ], GreenHouseSelectionComponent);
                 return GreenHouseSelectionComponent;
             }());

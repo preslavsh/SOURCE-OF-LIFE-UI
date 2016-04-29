@@ -6,6 +6,7 @@ export class PlantsService {
         {
             "name": "босилек",
             "en_name": "basil",
+            "category":"plant",
             "description": `Босилекът (Ocimum basilicum),
                 известен още като „царска билка“ (от гр. basilicum — царски),
                 е едногодишно тревисто растение с голо четириръбесто стъбло.
@@ -26,6 +27,7 @@ export class PlantsService {
         {
             "name": "мента",
             "en_name": "mint",
+            "category":"plant",
             "description":`Мента (Mentha) е род многогодишни
             тревисти растения от семейство Устноцветни. Разпространена
             е главно в северния умерен пояс. В България се срещат около
@@ -53,6 +55,7 @@ export class PlantsService {
         {
             "name": "репичка",
             "en_name": "radish",
+            "category":"plant",
             "description":"",
             "ph":"6.0 - 7.0",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
@@ -60,6 +63,7 @@ export class PlantsService {
         {
             "name": "магданоз",
             "en_name": "parsley",
+            "category":"plant",
             "description":"",
             "ph":"5.0 - 7.0",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
@@ -67,11 +71,13 @@ export class PlantsService {
         {
             "name": "риган",
             "en_name": "oregano",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "лук",
             "en_name": "onion",
+            "category":"plant",
             "description":"",
             "ph":"6.0 - 7.0",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
@@ -79,16 +85,19 @@ export class PlantsService {
         {
             "name": "латинка",
             "en_name": "nasturtium",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "синап",
             "en_name": "sinapis",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "мащерка",
             "en_name": "thymus",
+            "category":"plant",
             "description":"",
             "ph":"5.5 - 7.0",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
@@ -96,27 +105,32 @@ export class PlantsService {
         {
             "name": "манголд",
             "en_name": "chard",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "слънчоглед",
             "en_name": "sunflower",
+            "category":"plant",
             "specific": "sprout",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "чубрица",
             "en_name": "satureja",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "житняк",
             "en_name": "agropyron",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "sage",
             "en_name": "sage",
+            "category":"plant",
             "description":"",
             "ph":"5.5 - 6.5",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
@@ -124,6 +138,7 @@ export class PlantsService {
         {
             "name": "грах",
             "en_name": "pea",
+            "category":"plant",
             "specific": "sprout",
             "description":"",
             "ph":"6.0 - 7.5",
@@ -132,6 +147,7 @@ export class PlantsService {
         {
             "name": "маруля",
             "en_name": "lettuce",
+            "category":"plant",
             "description":"",
             "ph":"6.0 - 7.0",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
@@ -139,6 +155,7 @@ export class PlantsService {
         {
             "name": "леща",
             "en_name": "lentil",
+            "category":"plant",
             "description":"",
             "ph":"5.5 - 7.0",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
@@ -146,26 +163,31 @@ export class PlantsService {
         {
             "name": "маточина",
             "en_name": "balm",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "komatsuna",
             "en_name": "komatsuna",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "сминдух",
             "en_name": "fenugreek",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "лен",
             "en_name": "linum",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "къдрaвo зеле",
             "en_name": "kale",
+            "category":"plant",
             "description":"",
             "ph":"6.0 - 7.5",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
@@ -173,11 +195,13 @@ export class PlantsService {
         {
             "name": "копър",
             "en_name": "dill",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "сибирски лук",
             "en_name": "chives",
+            "category":"plant",
             "description":"",
             "ph":"6.0 - 7.0",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
@@ -185,11 +209,13 @@ export class PlantsService {
         {
             "name": "кориандър",
             "en_name": "cilantro",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "зеле",
             "en_name": "cabbage",
+            "category":"plant",
             "description":"",
             "ph":"6.0 - 7.5",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
@@ -197,11 +223,13 @@ export class PlantsService {
         {
             "name": "елда",
             "en_name": "fagopyrum",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "броколи",
             "en_name": "broccoli",
+            "category":"plant",
             "description":"",
             "ph":"6.0 - 7.0",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
@@ -209,17 +237,20 @@ export class PlantsService {
         {
             "name": "цвекло",
             "en_name": "beet",
+            "category":"plant",
             "specific": "sprout",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "рукола",
             "en_name": "rucola",
+            "category":"plant",
             "dishes":[{name:'Песто',img_name:"pesto.jpg"},{name:'Капрезе',img_name:"kapreze.jpg"}]
         },
         {
             "name": "марихуана",
             "en_name": "weed",
+            "category":"plant",
             "dishes":[{name:'Коз',img_name:"joint.jpg"},{name:'Бонг',img_name:"bong.jpg"}]
         }
     ];

@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./services/plants.service", "./services/greenhouse.service", "./models/greenhouse", "./models/plant"], function(exports_1, context_1) {
+System.register(['angular2/core', "./services/plants.service", "./services/greenhouse.service", "./models/greenhouse", "./models/plant", "angular2/router"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', "./services/plants.service", "./services/green
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, plants_service_1, greenhouse_service_1, greenhouse_1, plant_1;
+    var core_1, plants_service_1, greenhouse_service_1, greenhouse_1, plant_1, router_1;
     var GreenHouseComponent;
     return {
         setters:[
@@ -28,11 +28,15 @@ System.register(['angular2/core', "./services/plants.service", "./services/green
             },
             function (plant_1_1) {
                 plant_1 = plant_1_1;
+            },
+            function (router_1_1) {
+                router_1 = router_1_1;
             }],
         execute: function() {
             GreenHouseComponent = (function () {
-                function GreenHouseComponent(greenhouseService) {
+                function GreenHouseComponent(greenhouseService, _router) {
                     this.greenhouseService = greenhouseService;
+                    this._router = _router;
                     this.hasNotPlant = true;
                     this.greenhouse = this.greenhouseService.greenhouses[0];
                     this.onChangeGreenHouse(this.greenhouseService.greenhouses[0].id);
@@ -51,6 +55,14 @@ System.register(['angular2/core', "./services/plants.service", "./services/green
                 GreenHouseComponent.prototype.saveGreenhouseName = function () {
                     this.greenhouseService.renameGreenhouse(this.greenhouse.id, this.greenhouse.name);
                 };
+                GreenHouseComponent.prototype.gotoPlants = function () {
+                    var link = ['Plants'];
+                    this._router.navigate(link);
+                };
+                GreenHouseComponent.prototype.buy = function () {
+                    var link = ['Shop'];
+                    this._router.navigate(link);
+                };
                 GreenHouseComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-greenhouse-component',
@@ -58,7 +70,7 @@ System.register(['angular2/core', "./services/plants.service", "./services/green
                         styleUrls: ['styles/greenhouse.component.css'],
                         providers: [greenhouse_service_1.GreenhouseService, plants_service_1.PlantsService]
                     }), 
-                    __metadata('design:paramtypes', [greenhouse_service_1.GreenhouseService])
+                    __metadata('design:paramtypes', [greenhouse_service_1.GreenhouseService, router_1.Router])
                 ], GreenHouseComponent);
                 return GreenHouseComponent;
             }());

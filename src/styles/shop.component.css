@@ -1,0 +1,45 @@
+
+.search_plant {
+    margin: 2%;
+    font-size: large;
+    height: 11%;
+    border: 1px solid #a9db2c;
+    width:43%;
+    display: inline;
+}
+
+.sel-plant{
+    display: inline;
+    width:43%;
+}
+
+.bnt-plant {
+    margin: 4% 0 4% 2%;
+    padding: 3% 6%;
+    color: white;
+    background-color: #a9db2c;
+    border: 1px solid #a9db2c;
+    border-radius: 25px;
+    font-size: large;
+    width:35%;
+}
+
+.dark-green {
+    color: #476b25;
+}
+
+@media only screen and (max-width: 768px) {
+    .hide-green {
+        visibility: hidden;
+    }
+
+    .block-display{
+        display:block;
+    }
+
+    .filter-width{
+        width:70%;
+    }
+}
+
+

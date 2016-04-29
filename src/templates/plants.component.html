@@ -4,13 +4,14 @@
     </div>
     <input placeholder="Въдете име на растение!" class="form-control search_plant" [(ngModel)]="nameFilter"
            type="text"/>
+
     <div class="row">
         <div *ngFor="#plant of (service.plants|filterByName:nameFilter)" class="col-lg-4 col-sm-3 text-center">
             <img class="img-circle img-responsive img-center sprite" id="{{plant.en_name}}" alt="">
             <h3 class="dark-green">{{plant.name|sgCapitalCase}}
             </h3>
             <button class="bnt-plant" (click)="gotoDetail(plant.en_name)">Разгледай</button>
-            <button class="bnt-plant bnt-plant-buy">Купи</button>
+            <button class="bnt-plant bnt-plant-buy" (click)="buy(plant.en_name)">Купи</button>
         </div>
     </div>
 

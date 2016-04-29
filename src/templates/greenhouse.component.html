@@ -2,7 +2,7 @@
     <select (change)="onChangeGreenHouse($event.target.value)" class="form-control green-sel">
         <option *ngFor="#ghouse of greenhouseService.greenhouses" [value]="ghouse.id">{{ghouse.name}}</option>
     </select>
-    <button class="btn-menu">Нов парник</button>
+    <button class="btn-menu" (click)="buy()">Нов парник</button>
     <div>
         <span><b>Име:</b></span>
         <input [(ngModel)]="greenhouse.name" type="text" class="form-control green-inp" maxlength="23" required/>
@@ -18,5 +18,5 @@
         <p [hidden]="hasNotPlant">{{greenhouse.plants[0].name}}</p>
         <p [hidden]="!hasNotPlant">Не се отглежда нищо в момента</p>
     </div>
-    <button class="bnt-grow" style="width:61%;">Задай ново растение</button>
+    <button class="bnt-grow" style="width:61%;" (click)="gotoPlants();">Задай ново растение</button>
 </div>
