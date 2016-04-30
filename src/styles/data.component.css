@@ -1,0 +1,41 @@
+.form-group input[type="checkbox"] {
+    display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+    width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+    display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+    display: inline-block;
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+    display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+    display: none;
+}
+
+.next-to{
+    float: left;
+    display:inline-flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .chart-bottom {
+        display:block;
+    }
+}
+
+.left-margin{
+    margin-left: 30px;
+}
+
+.chart-style{
+    width: 650px;
+    height: 450px;
+}

@@ -45,7 +45,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "category": "plant",
                             "description": "",
                             "ph": "6.0 - 7.0",
-                            "dishes": [{ name: 'Песто', img_name: "pesto.jpg" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
+                            "dishes": [{ name: 'Салата от репички', img_name: "radish_salad.png" }, { name: 'Капрезе', img_name: "kapreze.jpg" }]
                         },
                         {
                             "name": "магданоз",

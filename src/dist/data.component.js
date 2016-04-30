@@ -20,11 +20,19 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             DataComponent = (function () {
                 function DataComponent() {
+                    this.filters = [
+                        { id: "temp", name: "Температура" },
+                        { id: "humidity", name: "Влажност" },
+                        { id: "ph", name: "pH" },
+                        { id: "sun", name: "Осветеност" },
+                        { id: "irrigation", name: "Поливане" }
+                    ];
                 }
                 DataComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-data-component',
-                        templateUrl: './templates/data.component.html'
+                        templateUrl: './templates/data.component.html',
+                        styleUrls: ['./styles/data.component.css']
                     }), 
                     __metadata('design:paramtypes', [])
                 ], DataComponent);

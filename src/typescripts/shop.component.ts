@@ -5,7 +5,6 @@ import {GreenhouseModelsService} from "./services/greenhouse-models.service";
 import {PlantsService} from "./services/plants.service";
 import {CapitalCasePipe} from "./pipes/capital.case.pipe";
 import {FilterByNameCatPipe} from "./pipes/filter-by-name-cat.pipe";
-import {OnInit} from "angular2/core";
 import {SelectTypeDirective} from "./directives/select-type.directive";
 import {Router} from "angular2/router";
 
@@ -35,8 +34,8 @@ export class ShopComponent {
         }
     }
 
-    buy(en_name:string){
-        let link = ['BuyForm', { en_name:en_name  }];
+    buy(en_name:string) {
+        let link = ['BuyForm', {en_name: en_name}];
         this._router.navigate(link);
     }
 }

@@ -1,0 +1,88 @@
+var chart;
+var counter=0;
+
+var preMapsData=[];
+
+var headers=["Температура","Влажност","pH","Осветеност","Поливане"];
+var temp = [20,30,40,50,60];
+var humidity=[100,80,60,40,20];
+var ph=[5,6,7,5,6];
+var sun = [7,8,9,10,11];
+var irrigation=[100,0,100,0,100];
+
+var values={
+    "temp":{
+        name:headers[0],
+        points:temp
+    },
+    "humidity":{
+        name:headers[1],
+        points:humidity
+    },
+    "ph":{
+        name:headers[2],
+        points:ph
+    },
+    "sun":{
+        name:headers[3],
+        points:sun
+    },
+    "irrigation":{
+        name:headers[4],
+        points:irrigation
+    }
+};
+
+var loadChart = function () {
+    if (chart == null) {
+        google.charts.setOnLoadCallback(drawChart);
+    }
+    drawChart();
+};
+
+function prepareData(checkedObj){
+    var chartData = [
+        ['Период'],
+        ["Предишния ден"],
+        ["Миналата седмица"],
+        ["Вчера"],
+        ["Днес"],
+        ["Сега"]
+    ];
+    for(item in checkedObj){
+        if(checkedObj[item]){
+            chartData[0].push(values[item].name);
+            for(var i = 1; i<chartData.length;i++){
+                chartData[i].push(values[item].points[i-1]);
+            }
+        }
+    }
+    return chartData;
+}
+
+function loadChartFromData() {
+    counter++;
+    if(counter%2===0){
+        var temp = document.getElementById("temp").checked;
+        var humidity = document.getElementById("humidity").checked;
+        var ph = document.getElementById("ph").checked;
+        var sun = document.getElementById("sun").checked;
+        var irrigation = document.getElementById("irrigation").checked;
+        var checkedObj={temp,humidity,ph,sun,irrigation};
+        preMapsData = prepareData(checkedObj);
+        loadChart();
+    }
+}
+
+google.charts.load('current', {'packages': ['corechart']});
+
+function drawChart() {
+    var data = google.visualization.arrayToDataTable(preMapsData);
+    var options = {
+        title: 'Данни за период',
+        hAxis: {title: 'Период', titleTextStyle: {color: '#511c39'}},
+        vAxis: {minValue: 0}
+    };
+    chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+}
