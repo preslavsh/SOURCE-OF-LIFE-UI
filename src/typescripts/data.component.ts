@@ -14,4 +14,5 @@ export class DataComponent {
         {id:"sun",name:"Осветеност"},
         {id:"irrigation",name:"Поливане"}
     ]
+
 }
