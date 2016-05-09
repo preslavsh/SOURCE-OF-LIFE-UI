@@ -11,7 +11,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "angular2": "^2.0.0-beta.16",
+    "angular2": "2.0.0-beta.16",
     "ejs": "^2.4.1",
     "es6-shim": "^0.35.0",
     "express": "^4.13.4",
@@ -19,7 +19,7 @@
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
     "systemjs": "0.19.25",
-    "zone.js": "^0.6.12"
+    "zone.js": "0.6.12"
   },
   "devDependencies": {
     "tslint": "^3.7.4",

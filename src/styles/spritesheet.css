@@ -1,5 +1,5 @@
 .sprite {
-    background-image: url(../images/spritesheet.png);
+    background-image: url("../images/spritesheet.png");
     background-repeat: no-repeat;
     display: block;
 }
@@ -10,34 +10,52 @@
     background-position: -5px -5px;
 }
 
-#balm {
+#almond-salmon-chives {
     width: 200px;
-    height: 199px;
+    height: 200px;
     background-position: -215px -5px;
 }
 
-#basil {
+#apples-cabagge {
     width: 200px;
     height: 200px;
     background-position: -425px -5px;
 }
 
-#beet {
+#balm {
     width: 200px;
-    height: 200px;
+    height: 199px;
     background-position: -635px -5px;
 }
 
-#biggreenhouse {
+#basil {
     width: 200px;
     height: 200px;
     background-position: -845px -5px;
 }
 
-#biochar {
+#beet {
     width: 200px;
     height: 200px;
     background-position: -1055px -5px;
+}
+
+#beet-sprouts-salad {
+    width: 200px;
+    height: 200px;
+    background-position: -1265px -5px;
+}
+
+#biggreenhouse {
+    width: 200px;
+    height: 200px;
+    background-position: -1475px -5px;
+}
+
+#biochar {
+    width: 200px;
+    height: 200px;
+    background-position: -1685px -5px;
 }
 
 #biohumus {
@@ -52,182 +70,524 @@
     background-position: -215px -215px;
 }
 
-#cabbage {
+#broccoli-potatoes {
     width: 200px;
     height: 200px;
     background-position: -425px -215px;
 }
 
-#chard {
+#broccoli-pasta {
     width: 200px;
     height: 200px;
     background-position: -635px -215px;
 }
 
-#chives {
+#buckwheat-risotto {
     width: 200px;
     height: 200px;
     background-position: -845px -215px;
 }
 
-#cilantro {
+#buckwheat_choco_chip_cookies {
     width: 200px;
     height: 200px;
     background-position: -1055px -215px;
 }
 
-#cofehumus {
-    width: 200px;
-    height: 200px;
-    background-position: -5px -425px;
-}
-
-#dill {
-    width: 200px;
-    height: 200px;
-    background-position: -215px -425px;
-}
-
-#fagopyrum {
-    width: 200px;
-    height: 200px;
-    background-position: -425px -425px;
-}
-
-#fenugreek {
-    width: 200px;
-    height: 200px;
-    background-position: -635px -425px;
-}
-
-#kale {
-    width: 200px;
-    height: 200px;
-    background-position: -925px -425px;
-}
-
-#komatsuna {
-    width: 200px;
-    height: 200px;
-    background-position: -5px -635px;
-}
-
-#leavehumus {
-    width: 200px;
-    height: 200px;
-    background-position: -215px -635px;
-}
-
-#lentil {
-    width: 200px;
-    height: 200px;
-    background-position: -425px -635px;
-}
-
-#lettuce {
-    width: 200px;
-    height: 200px;
-    background-position: -635px -635px;
-}
-
-#linum {
-    width: 200px;
-    height: 200px;
-    background-position: -845px -635px;
-}
-
-#mint {
-    width: 200px;
-    height: 200px;
-    background-position: -1055px -635px;
-}
-
-#nasturtium {
-    width: 200px;
-    height: 200px;
-    background-position: -5px -845px;
-}
-
-#onion {
-    width: 200px;
-    height: 200px;
-    background-position: -215px -845px;
-}
-
-#oregano {
-    width: 200px;
-    height: 200px;
-    background-position: -425px -845px;
-}
-
-#parsley {
-    width: 200px;
-    height: 200px;
-    background-position: -635px -845px;
-}
-
-#pea {
-    width: 200px;
-    height: 199px;
-    background-position: -845px -845px;
-}
-
-#plotgreenhouse {
-    width: 200px;
-    height: 200px;
-    background-position: -1055px -845px;
-}
-
-#radish {
-    width: 200px;
-    height: 200px;
-    background-position: -5px -1055px;
-}
-
-#rucola {
-    width: 200px;
-    height: 199px;
-    background-position: -215px -1055px;
-}
-
-#sage {
-    width: 200px;
-    height: 200px;
-    background-position: -425px -1055px;
-}
-
-#satureja {
-    width: 200px;
-    height: 200px;
-    background-position: -635px -1055px;
-}
-
-#sinapis {
-    width: 200px;
-    height: 199px;
-    background-position: -845px -1055px;
-}
-
-#smallgreenhouse {
-    width: 200px;
-    height: 200px;
-    background-position: -1055px -1055px;
-}
-
-#sunflower {
-    width: 200px;
-    height: 200px;
-    background-position: -1265px -5px;
-}
-
-#thymus {
+#cabbage {
     width: 200px;
     height: 200px;
     background-position: -1265px -215px;
 }
 
-#weed {
+#chard {
     width: 200px;
     height: 200px;
-    background-position: -1295px -425px;
+    background-position: -1475px -215px;
+}
+
+#cheese-dill {
+    width: 200px;
+    height: 200px;
+    background-position: -1685px -215px;
+}
+
+#chicken_coriander {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -425px;
+}
+
+#chives {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -425px;
+}
+
+#cilantro {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -425px;
+}
+
+#cofehumus {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -425px;
+}
+
+#coriander-soup {
+    width: 200px;
+    height: 200px;
+    background-position: -845px -425px;
+}
+
+#dill {
+    width: 200px;
+    height: 200px;
+    background-position: -1055px -425px;
+}
+
+#fagopyrum {
+    width: 200px;
+    height: 200px;
+    background-position: -1265px -425px;
+}
+
+#fenugreek {
+    width: 200px;
+    height: 200px;
+    background-position: -1475px -425px;
+}
+
+#fresh-onion-salad {
+    width: 200px;
+    height: 200px;
+    background-position: -1685px -425px;
+}
+
+#fry-pea-sprouts {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -635px;
+}
+
+#golden-beet-sunflower-salad {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -635px;
+}
+
+#greek-salad {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -635px;
+}
+
+#green-saald {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -635px;
+}
+
+#kale {
+    width: 200px;
+    height: 200px;
+    background-position: -845px -635px;
+}
+
+#kale-marinated-salad {
+    width: 200px;
+    height: 200px;
+    background-position: -1055px -635px;
+}
+
+#kapreze {
+    width: 200px;
+    height: 200px;
+    background-position: -1265px -635px;
+}
+
+#komatsuna {
+    width: 200px;
+    height: 200px;
+    background-position: -1475px -635px;
+}
+
+#komatsuna-salad {
+    width: 200px;
+    height: 200px;
+    background-position: -1685px -635px;
+}
+
+#komatsuna-tofu {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -845px;
+}
+
+#latinka-pesto {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -845px;
+}
+
+#latinka-salad {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -845px;
+}
+
+#leavehumus {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -845px;
+}
+
+#lemon-balm-cake {
+    width: 200px;
+    height: 200px;
+    background-position: -845px -845px;
+}
+
+#lemon-balm-ice-tea {
+    width: 200px;
+    height: 200px;
+    background-position: -1055px -845px;
+}
+
+#lentil {
+    width: 200px;
+    height: 200px;
+    background-position: -1265px -845px;
+}
+
+#lentil-bulger {
+    width: 200px;
+    height: 199px;
+    background-position: -1475px -845px;
+}
+
+#lentil-mango {
+    width: 200px;
+    height: 199px;
+    background-position: -1685px -845px;
+}
+
+#lettuce-wraps {
+    width: 200px;
+    height: 200px;
+    background-position: -1475px -1054px;
+}
+
+#lettuce {
+    width: 200px;
+    height: 200px;
+    background-position: -1685px -1054px;
+}
+
+#linen-bread {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -1264px;
+}
+
+#linen-kreker {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -1264px;
+}
+
+#linum {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -1264px;
+}
+
+#mangold-tofu {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -1264px;
+}
+
+#mint {
+    width: 200px;
+    height: 200px;
+    background-position: -845px -1264px;
+}
+
+#mint_tabule {
+    width: 200px;
+    height: 200px;
+    background-position: -1055px -1264px;
+}
+
+#mohito {
+    width: 200px;
+    height: 200px;
+    background-position: -1265px -1264px;
+}
+
+#mustard {
+    width: 200px;
+    height: 200px;
+    background-position: -1475px -1264px;
+}
+
+#nasturtium {
+    width: 200px;
+    height: 200px;
+    background-position: -1685px -1264px;
+}
+
+#onion {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -1474px;
+}
+
+#onion-eggs {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -1474px;
+}
+
+#oregano {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -1474px;
+}
+
+#oregano-chicken {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -1474px;
+}
+
+#parsley {
+    width: 200px;
+    height: 200px;
+    background-position: -845px -1474px;
+}
+
+#parsley-balls {
+    width: 200px;
+    height: 200px;
+    background-position: -1055px -1474px;
+}
+
+#patatoes-chives {
+    width: 200px;
+    height: 200px;
+    background-position: -1265px -1474px;
+}
+
+#pea {
+    width: 200px;
+    height: 199px;
+    background-position: -1475px -1474px;
+}
+
+#pea-shoots-salad {
+    width: 200px;
+    height: 200px;
+    background-position: -1685px -1474px;
+}
+
+#pesto {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -1684px;
+}
+
+#pizza-beet-sprouts {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -1684px;
+}
+
+#plotgreenhouse {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -1684px;
+}
+
+#pork-cabbage {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -1684px;
+}
+
+#radish {
+    width: 200px;
+    height: 200px;
+    background-position: -845px -1684px;
+}
+
+#radish-rukola-salad {
+    width: 200px;
+    height: 200px;
+    background-position: -1055px -1684px;
+}
+
+#radish_avocado {
+    width: 200px;
+    height: 200px;
+    background-position: -1265px -1684px;
+}
+
+#radish_salad {
+    width: 200px;
+    height: 200px;
+    background-position: -1475px -1684px;
+}
+
+#rucola {
+    width: 200px;
+    height: 199px;
+    background-position: -1685px -1684px;
+}
+
+#rukola-iceberg {
+    width: 200px;
+    height: 200px;
+    background-position: -2015px -5px;
+}
+
+#rustica_pizza {
+    width: 200px;
+    height: 200px;
+    background-position: -1895px -215px;
+}
+
+#sage {
+    width: 200px;
+    height: 200px;
+    background-position: -1895px -425px;
+}
+
+#sage-bruccells {
+    width: 200px;
+    height: 200px;
+    background-position: -1895px -635px;
+}
+
+#sage-pork {
+    width: 200px;
+    height: 200px;
+    background-position: -1895px -845px;
+}
+
+#sausage-kale-saute-polenta {
+    width: 200px;
+    height: 200px;
+    background-position: -1895px -1055px;
+}
+
+#savory {
+    width: 200px;
+    height: 200px;
+    background-position: -1895px -1265px;
+}
+
+#savory-brusceta {
+    width: 200px;
+    height: 200px;
+    background-position: -1895px -1475px;
+}
+
+#savory-quiche {
+    width: 200px;
+    height: 200px;
+    background-position: -1895px -1685px;
+}
+
+#sharena_sol {
+    width: 200px;
+    height: 200px;
+    background-position: -5px -1895px;
+}
+
+#sinapis {
+    width: 200px;
+    height: 199px;
+    background-position: -5px -1055px;
+}
+
+#smallgreenhouse {
+    width: 200px;
+    height: 200px;
+    background-position: -215px -1895px;
+}
+
+#sminduh-salad {
+    width: 200px;
+    height: 200px;
+    background-position: -425px -1895px;
+}
+
+#stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -2225px -5px;
+}
+
+#sunflower {
+    width: 200px;
+    height: 200px;
+    background-position: -635px -1895px;
+}
+
+#sunflower-sprout-salad {
+    width: 200px;
+    height: 200px;
+    background-position: -845px -1895px;
+}
+
+#tabule {
+    width: 200px;
+    height: 200px;
+    background-position: -1055px -1895px;
+}
+
+#tarator {
+    width: 200px;
+    height: 200px;
+    background-position: -1265px -1895px;
+}
+
+#thyme-chicken {
+    width: 200px;
+    height: 200px;
+    background-position: -1475px -1895px;
+}
+
+#thyme-rice {
+    width: 200px;
+    height: 200px;
+    background-position: -1685px -1895px;
+}
+
+#thymus {
+    width: 200px;
+    height: 200px;
+    background-position: -1895px -1895px;
+}
+
+#warm-mangold-sald {
+    width: 200px;
+    height: 200px;
+    background-position: -2265px -5px;
+}
+
+#wheatgrass-beet-cucumber {
+    width: 200px;
+    height: 200px;
+    background-position: -2105px -215px;
+}
+
+#wheatgrass-smoothie {
+    width: 200px;
+    height: 200px;
+    background-position: -2105px -425px;
 }
