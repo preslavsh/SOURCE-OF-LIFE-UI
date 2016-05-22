@@ -1,6 +1,6 @@
 <div class="next-div">
     <select (change)="onChangeGreenHouse($event.target.value)" class="form-control green-sel">
-        <option *ngFor="#ghouse of greenhouseService.greenhouses" [value]="ghouse.id">{{ghouse.name}}</option>
+        <option *ngFor="let ghouse of greenhouseService.greenhouses" [value]="ghouse.id">{{ghouse.name}}</option>
     </select>
     <button class="btn-menu" (click)="buy()">Нов парник</button>
     <div>

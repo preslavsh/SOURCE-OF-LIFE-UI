@@ -136,7 +136,6 @@ function areSelected(checkedObj){
 
 function insertIsEmptyHeader(){
     var elm = `<h3 style="margin: 25%;"><i>Ще се визуализира след избора на данни!</i></h3>`;
-    console.log(document.getElementById('chart_div').childNodes);
     $(elm).appendTo(document.getElementById('chart_div').childNodes[1].childNodes[0]);
 }
 

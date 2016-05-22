@@ -4,7 +4,7 @@ import {Component,Output,EventEmitter,OnInit} from 'angular2/core';
     selector: "sg-select-type",
     template: `
         <select #sel (change)="select.emit($event.target.value)" class="form-control search_plant sel-plant block-display filter-width">
-             <option *ngFor="#type of types" value="{{type.value}}">{{type.name}}</option>
+             <option *ngFor="let type of types" value="{{type.value}}">{{type.name}}</option>
         </select>
     `,
     styleUrls: ['./styles/shop.component.css']

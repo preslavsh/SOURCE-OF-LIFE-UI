@@ -4,9 +4,8 @@
     </div>
     <input placeholder="Въдете име на растение!" class="form-control search_plant" [(ngModel)]="nameFilter"
            type="text"/>
-
     <div class="row">
-        <div *ngFor="#plant of (service.plants|filterByName:nameFilter)" class="col-lg-4 col-sm-3 text-center">
+        <div *ngFor="let plant of (service.plants|filterByName:nameFilter)" class="col-lg-4 col-sm-3 text-center">
             <img class="img-circle img-responsive img-center sprite" id="{{plant.en_name}}" alt="">
             <h3 class="dark-green">{{plant.name|sgCapitalCase}}
             </h3>
@@ -14,14 +13,4 @@
             <button class="bnt-plant bnt-plant-buy" (click)="buy(plant.en_name)">Купи</button>
         </div>
     </div>
-
-    <hr>
-    <footer>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; Your Website 2014</p>
-            </div>
-        </div>
-    </footer>
-
 </div>

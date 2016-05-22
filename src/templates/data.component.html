@@ -7,7 +7,7 @@
                 <option value="home" >Парник в дома</option>
             </select>
             <div><h3>Моля избере данни</h3></div>
-            <div *ngFor="#filter of filters" class="[ form-group ]" onclick="loadChartFromData();">
+            <div *ngFor="let filter of filters" class="[ form-group ]" onclick="loadChartFromData();">
                 <input type="checkbox" name="fancy-checkbox-success-custom-icons"
                        id="{{filter.id}}" autocomplete="off"/>
                 <div class="[ btn-group ]">

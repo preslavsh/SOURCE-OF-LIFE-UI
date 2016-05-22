@@ -38,7 +38,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 SelectTypeDirective = __decorate([
                     core_1.Component({
                         selector: "sg-select-type",
-                        template: "\n        <select #sel (change)=\"select.emit($event.target.value)\" class=\"form-control search_plant sel-plant block-display filter-width\">\n             <option *ngFor=\"#type of types\" value=\"{{type.value}}\">{{type.name}}</option>\n        </select>\n    ",
+                        template: "\n        <select #sel (change)=\"select.emit($event.target.value)\" class=\"form-control search_plant sel-plant block-display filter-width\">\n             <option *ngFor=\"let type of types\" value=\"{{type.value}}\">{{type.name}}</option>\n        </select>\n    ",
                         styleUrls: ['./styles/shop.component.css']
                     }), 
                     __metadata('design:paramtypes', [])
