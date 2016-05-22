@@ -44,7 +44,7 @@ export class GreenHouseSelectionComponent implements OnInit {
             this.greenhouse = new Greenhouse(ghouse.id, ghouse.name, ghouse.plants);
             this.areTheSame = (this.plant.en_name===this.greenhouse.plants[0].en_name);
         }else{
-            this.greenhouse = new Greenhouse(ghouse.id, ghouse.name,[new Plant("","")]);
+            this.greenhouse = new Greenhouse(ghouse.id, ghouse.name,[new Plant("","","")]);
             this.areTheSame = false;
         }
         this.hasNotPlant=!havePlants;

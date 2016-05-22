@@ -28,7 +28,7 @@ export class GreenHouseComponent {
         if(havePlants){
             this.greenhouse = new Greenhouse(ghouse.id, ghouse.name, ghouse.plants);
         }else{
-            this.greenhouse = new Greenhouse(ghouse.id, ghouse.name,[new Plant("","")]);
+            this.greenhouse = new Greenhouse(ghouse.id, ghouse.name,[new Plant("","","")]);
         }
         this.hasNotPlant=!havePlants;
     }

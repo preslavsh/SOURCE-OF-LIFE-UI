@@ -59,6 +59,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "name": "риган",
                             "en_name": "oregano",
                             "category": "plant",
+                            "ph": "6.0 - 8.0",
                             "dishes": [{ name: 'Гръцка салата', img_name: "greek-salad" }, { name: 'Пиле с риган', img_name: "oregano-chicken" }]
                         },
                         {
@@ -73,12 +74,14 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "name": "латинка",
                             "en_name": "nasturtium",
                             "category": "plant",
+                            "ph": "5.5-7.5",
                             "dishes": [{ name: 'Салата с латинка', img_name: "latinka-salad" }, { name: 'Песто с латинка', img_name: "latinka-pesto" }]
                         },
                         {
                             "name": "синап",
                             "en_name": "sinapis",
                             "category": "plant",
+                            "ph": "6.5 - 6.8",
                             "dishes": [{ name: 'Горчица', img_name: "mustard" }, { name: 'Пица "Рустика"', img_name: "rustica_pizza" }]
                         },
                         {
@@ -93,6 +96,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "name": "манголд",
                             "en_name": "chard",
                             "category": "plant",
+                            "ph": "6.0 - 6.8",
                             "dishes": [{ name: 'Топла салата с манголд', img_name: "warm-mangold-sald" }, { name: 'Тофу с манголд', img_name: "mangold-tofu" }]
                         },
                         {
@@ -100,18 +104,21 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "en_name": "sunflower",
                             "category": "plant",
                             "specific": "sprout",
+                            "ph": "6.0 - 7.5",
                             "dishes": [{ name: 'Златно цветкло със слънчогледени кълнове', img_name: "golden-beet-sunflower-salad" }, { name: 'Салата със слънчогледови кълнове', img_name: "sunflower-sprout-salad" }]
                         },
                         {
                             "name": "чубрица",
                             "en_name": "savory",
                             "category": "plant",
+                            "ph": "6.7 - 7.3",
                             "dishes": [{ name: 'Лятна брускета', img_name: "savory-brusceta" }, { name: 'Вегитариански Киш', img_name: "savory-quiche" }]
                         },
                         {
                             "name": "житняк",
                             "en_name": "agropyron",
                             "category": "plant",
+                            "ph": "6.0 - 7.0",
                             "dishes": [{ name: 'Смути', img_name: "wheatgrass-smoothie" }, { name: 'Фреш с цвекло и житняк', img_name: "wheatgrass-beet-cucumber" }]
                         },
                         {
@@ -151,24 +158,28 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "name": "маточина",
                             "en_name": "balm",
                             "category": "plant",
+                            "ph": "6.0 - 7.0",
                             "dishes": [{ name: 'Студен чай', img_name: "lemon-balm-ice-tea" }, { name: 'Торта', img_name: "lemon-balm-cake" }]
                         },
                         {
                             "name": "komatsuna",
                             "en_name": "komatsuna",
                             "category": "plant",
+                            "ph": "5.5 - 6.5",
                             "dishes": [{ name: 'Тофу', img_name: "komatsuna-tofu" }, { name: 'Салата с Komatsuna', img_name: "komatsuna-salad" }]
                         },
                         {
                             "name": "сминдух",
                             "en_name": "fenugreek",
                             "category": "plant",
+                            "ph": "6.0 - 7.0",
                             "dishes": [{ name: 'Шарена сол', img_name: "sharena_sol" }, { name: 'Салата от кълнове на сминдух', img_name: "sminduh-salad" }]
                         },
                         {
                             "name": "лен",
                             "en_name": "linum",
                             "category": "plant",
+                            "ph": "5.0 - 7.0",
                             "dishes": [{ name: 'Хляб', img_name: "linen-bread" }, { name: 'Крекери', img_name: "linen-kreker" }]
                         },
                         {
@@ -183,6 +194,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "name": "копър",
                             "en_name": "dill",
                             "category": "plant",
+                            "ph": "5.5 - 7.5",
                             "dishes": [{ name: 'Таратор', img_name: "tarator" }, { name: 'Сиренки', img_name: "cheese-dill" }]
                         },
                         {
@@ -197,6 +209,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "name": "кориандър",
                             "en_name": "cilantro",
                             "category": "plant",
+                            "ph": "6.5 - 7.5",
                             "dishes": [{ name: 'Пиле с кориандър', img_name: "chicken_coriander" }, { name: 'Картофена супа с кориандър', img_name: "coriander-soup" }]
                         },
                         {
@@ -211,6 +224,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "name": "елда",
                             "en_name": "fagopyrum",
                             "category": "plant",
+                            "ph": "6.0 - 6.5",
                             "dishes": [{ name: 'Шоколадови бисквити с елда', img_name: "buckwheat_choco_chip_cookies" }, { name: 'Ризото с елда', img_name: "buckwheat-risotto" }]
                         },
                         {
@@ -226,12 +240,14 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                             "en_name": "beet",
                             "category": "plant",
                             "specific": "sprout",
+                            "ph": "6.2 - 7.0",
                             "dishes": [{ name: 'Салата с кълнове цвекло', img_name: "beet-sprouts-salad" }, { name: 'Пица с кълнове цвекло', img_name: "pizza-beet-sprouts" }]
                         },
                         {
                             "name": "рукола",
                             "en_name": "rucola",
                             "category": "plant",
+                            "ph": "6.0 - 7.0",
                             "dishes": [{ name: 'Рукола с репички', img_name: "radish-rukola-salad" }, { name: 'Рукола с айсберг', img_name: "rukola-iceberg" }]
                         }
                     ];

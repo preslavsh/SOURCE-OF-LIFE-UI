@@ -48,7 +48,7 @@ System.register(['angular2/core', "./services/plants.service", "./services/green
                         this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, ghouse.plants);
                     }
                     else {
-                        this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, [new plant_1.Plant("", "")]);
+                        this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, [new plant_1.Plant("", "", "")]);
                     }
                     this.hasNotPlant = !havePlants;
                 };

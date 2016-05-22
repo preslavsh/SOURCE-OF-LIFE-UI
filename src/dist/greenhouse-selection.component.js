@@ -61,7 +61,7 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
                         this.areTheSame = (this.plant.en_name === this.greenhouse.plants[0].en_name);
                     }
                     else {
-                        this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, [new plant_1.Plant("", "")]);
+                        this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, [new plant_1.Plant("", "", "")]);
                         this.areTheSame = false;
                     }
                     this.hasNotPlant = !havePlants;

@@ -36,7 +36,7 @@ System.register(['angular2/core', "./services/plants.service", "angular2/router"
                 PlantDetailComponent.prototype.ngOnInit = function () {
                     var en_name = this._routeParams.get('en_name');
                     var p = this._plantService.getByEnName(en_name);
-                    this.plant = new plant_1.Plant(p.name, p.en_name, p.dishes);
+                    this.plant = new plant_1.Plant(p.name, p.en_name, p.ph, p.dishes);
                 };
                 PlantDetailComponent.prototype.goBack = function () {
                     window.history.back();

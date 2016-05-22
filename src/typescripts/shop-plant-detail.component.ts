@@ -21,7 +21,7 @@ export class ShopPlantDetailComponent implements OnInit {
     ngOnInit() {
         let en_name:string = this._routeParams.get('en_name');
         let p = this._plantService.getByEnName(en_name);
-        this.plant = new Plant(p.name, p.en_name,p.dishes);
+        this.plant = new Plant(p.name, p.en_name,p.ph,p.dishes);
     }
 
     goBack() {
