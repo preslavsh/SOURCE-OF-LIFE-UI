@@ -28,7 +28,7 @@ export class GreenHouseSelectionComponent implements OnInit {
     ngOnInit() {
         let en_name:string = this._routeParams.get('en_name');
         let p = this._plantService.getByEnName(en_name);
-        this.plant = new Plant(p.name, p.en_name, p.dishes);
+        this.plant = new Plant(p.name, p.en_name,p.ph,p.description,p.water,p.sun, p.dishes);
         this.greenhouse = this.greenhouseService.greenhouses[0];
         this.onChangeGreenHouse(this.greenhouseService.greenhouses[0].id);
     }
@@ -44,7 +44,7 @@ export class GreenHouseSelectionComponent implements OnInit {
             this.greenhouse = new Greenhouse(ghouse.id, ghouse.name, ghouse.plants);
             this.areTheSame = (this.plant.en_name===this.greenhouse.plants[0].en_name);
         }else{
-            this.greenhouse = new Greenhouse(ghouse.id, ghouse.name,[new Plant("","","")]);
+            this.greenhouse = new Greenhouse(ghouse.id, ghouse.name,[Plant.empty()]);
             this.areTheSame = false;
         }
         this.hasNotPlant=!havePlants;

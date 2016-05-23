@@ -4,17 +4,17 @@ var counter=0;
 var preMapsData=[];
 
 var headers=["Температура","Влажност","pH","Осветеност","Поливане"];
-var temp = [20,30,40,50,60];
-var humidity=[100,80,60,40,20];
-var ph=[5,6,7,5,6];
-var sun = [7,8,9,10,11];
+var temp = [15,20,15,20,15];
+var humidity=[100,40,100,40,100];
+var ph=[6,7,7,6,7];
+var sun = [9,10,10,9,8];
 var irrigation=[100,0,100,0,100];
 
-var temp2 = [30,20,30,20,30];
-var humidity2=[50,100,50,100,30];
-var ph2=[5,6,6,6,5];
-var sun2 = [5,6,7,8,9];
-var irrigation2=[100,100,100,0,100];
+var temp2 = [25,20,25,20,25];
+var humidity2=[50,100,50,100,50];
+var ph2=[5,6.5,6.5,6.5,5];
+var sun2 = [10,11,12,11,10];
+var irrigation2=[100,100,0,0,100];
 
 var gHouseData={
     "restaurant":{

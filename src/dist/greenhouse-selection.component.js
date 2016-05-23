@@ -46,7 +46,7 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
                 GreenHouseSelectionComponent.prototype.ngOnInit = function () {
                     var en_name = this._routeParams.get('en_name');
                     var p = this._plantService.getByEnName(en_name);
-                    this.plant = new plant_1.Plant(p.name, p.en_name, p.dishes);
+                    this.plant = new plant_1.Plant(p.name, p.en_name, p.ph, p.description, p.water, p.sun, p.dishes);
                     this.greenhouse = this.greenhouseService.greenhouses[0];
                     this.onChangeGreenHouse(this.greenhouseService.greenhouses[0].id);
                 };
@@ -61,7 +61,7 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
                         this.areTheSame = (this.plant.en_name === this.greenhouse.plants[0].en_name);
                     }
                     else {
-                        this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, [new plant_1.Plant("", "", "")]);
+                        this.greenhouse = new greenhouse_1.Greenhouse(ghouse.id, ghouse.name, [plant_1.Plant.empty()]);
                         this.areTheSame = false;
                     }
                     this.hasNotPlant = !havePlants;
