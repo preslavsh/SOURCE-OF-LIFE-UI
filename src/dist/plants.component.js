@@ -1,4 +1,4 @@
-System.register(['angular2/core', './services/plants.service', "./pipes/capital.case.pipe", "./pipes/filter-by-name.pipe", "angular2/router"], function(exports_1, context_1) {
+System.register(['@angular/core', './services/plants.service', "./pipes/capital.case.pipe", "./pipes/filter-by-name.pipe", "@angular/router"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -37,12 +37,10 @@ System.register(['angular2/core', './services/plants.service', "./pipes/capital.
                     this.nameFilter = "";
                 }
                 PlantsComponent.prototype.gotoDetail = function (en_name) {
-                    var link = ['PlantDetail', { en_name: en_name }];
-                    this._router.navigate(link);
+                    this._router.navigate(['/detail', en_name]);
                 };
                 PlantsComponent.prototype.buy = function (en_name) {
-                    var link = ['BuyForm', { en_name: en_name }];
-                    this._router.navigate(link);
+                    this._router.navigate(['/shop/buy', en_name]);
                 };
                 PlantsComponent = __decorate([
                     core_1.Component({
@@ -50,7 +48,7 @@ System.register(['angular2/core', './services/plants.service', "./pipes/capital.
                         templateUrl: './templates/plants.component.html',
                         styleUrls: ['./styles/plants_page_styles.css'],
                         providers: [plants_service_1.PlantsService],
-                        pipes: [capital_case_pipe_1.CapitalCasePipe, filter_by_name_pipe_1.FilterByNamePipe]
+                        pipes: [capital_case_pipe_1.CapitalCasePipe, filter_by_name_pipe_1.FilterByNamePipe],
                     }), 
                     __metadata('design:paramtypes', [router_1.Router, plants_service_1.PlantsService])
                 ], PlantsComponent);

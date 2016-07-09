@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./services/plants.service", "angular2/router", "./models/plant"], function(exports_1, context_1) {
+System.register(['@angular/core', "./services/plants.service", "@angular/router", "./models/plant"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -28,22 +28,27 @@ System.register(['angular2/core', "./services/plants.service", "angular2/router"
             }],
         execute: function() {
             ShopPlantDetailComponent = (function () {
-                function ShopPlantDetailComponent(_plantService, _routeParams, _router) {
+                function ShopPlantDetailComponent(_plantService, _route, _router) {
                     this._plantService = _plantService;
-                    this._routeParams = _routeParams;
+                    this._route = _route;
                     this._router = _router;
                 }
                 ShopPlantDetailComponent.prototype.ngOnInit = function () {
-                    var en_name = this._routeParams.get('en_name');
-                    var p = this._plantService.getByEnName(en_name);
-                    this.plant = new plant_1.Plant(p.name, p.en_name, p.ph, p.description, p.water, p.sun, p.dishes);
+                    var _this = this;
+                    this.sub = this._route.params.subscribe(function (params) {
+                        var en_name = params['en_name'];
+                        var p = _this._plantService.getByEnName(en_name);
+                        _this.plant = new plant_1.Plant(p.name, p.en_name, p.ph, p.description, p.water, p.sun, p.dishes);
+                    });
+                };
+                ShopPlantDetailComponent.prototype.ngOnDestroy = function () {
+                    this.sub.unsubscribe();
                 };
                 ShopPlantDetailComponent.prototype.goBack = function () {
                     window.history.back();
                 };
                 ShopPlantDetailComponent.prototype.buy = function (en_name) {
-                    var link = ['BuyForm', { en_name: en_name }];
-                    this._router.navigate(link);
+                    this._router.navigate(['/shop/buy/', en_name]);
                 };
                 ShopPlantDetailComponent = __decorate([
                     core_1.Component({
@@ -52,7 +57,7 @@ System.register(['angular2/core', "./services/plants.service", "angular2/router"
                         styleUrls: ['styles/plant-detail.component.css'],
                         providers: [plants_service_1.PlantsService]
                     }), 
-                    __metadata('design:paramtypes', [plants_service_1.PlantsService, router_1.RouteParams, router_1.Router])
+                    __metadata('design:paramtypes', [plants_service_1.PlantsService, router_1.ActivatedRoute, router_1.Router])
                 ], ShopPlantDetailComponent);
                 return ShopPlantDetailComponent;
             }());

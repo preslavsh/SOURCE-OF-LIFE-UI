@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <base href="/">
     <title>Source Of Life</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,28 +17,14 @@
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="javascripts/jquery.js"></script>
 <script src="javascripts/draw_charts.js"></script>
-<script src="./es6-shim/es6-shim.min.js"></script>
-<script src="./systemjs/dist/system-polyfills.js"></script>
-<script src="./angular2/es6/dev/src/testing/shims_for_IE.js"></script>
 
-<script src="./angular2/bundles/angular2-polyfills.js"></script>
+<script src="./core-js/client/shim.min.js"></script>
+<script src="./zone.js/dist/zone.js"></script>
+<script src="./reflect-metadata/Reflect.js"></script>
 <script src="./systemjs/dist/system.src.js"></script>
-<script src="./rxjs/bundles/Rx.js"></script>
-<script src="./angular2/bundles/angular2.dev.js"></script>
-
-<script src="./angular2/bundles/http.js"></script>
-<script src="./angular2/bundles/router.dev.js"></script>
+<script src="systemjs.config.js"></script>
 <script>
-    System.config({
-        packages: {
-            dist: {
-                format: 'register',
-                defaultExtension: 'js'
-            }
-        }
-    });
-    System.import('dist/main')
-            .then(null, console.error.bind(console));
+      System.import('dist/main').catch(function(err){ console.error(err); });
 </script>
 <script src="javascripts/bootstrap.min.js"></script>
 

@@ -1,6 +1,6 @@
-import {OnInit,Component} from 'angular2/core';
+import {OnInit,OnDestroy,Component} from '@angular/core';
 import {PlantsService} from "./services/plants.service";
-import {RouteParams,Router} from "angular2/router";
+import {ActivatedRoute,Router} from "@angular/router";
 import {ShopService} from "./services/shop.service";
 import {GreenhouseModelsService} from "./services/greenhouse-models.service";
 import {ConsumablesService} from "./services/consumables.service";
@@ -11,19 +11,26 @@ import {ConsumablesService} from "./services/consumables.service";
     styleUrls:['styles/plant-detail.component.css'],
     providers: [ConsumablesService, GreenhouseModelsService,PlantsService, ShopService]
 })
-export class ShopOtherDetailComponent implements OnInit {
+export class ShopOtherDetailComponent implements OnInit,OnDestroy {
 
     public item:any;
+    private sub:any;
 
     constructor(private service:ShopService,
-                private _routeParams:RouteParams,
+                private _route:ActivatedRoute,
                 private _router:Router) {
         this.item = {en_name:"",name:"",description:""};
     }
 
     ngOnInit() {
-        let en_name:string = this._routeParams.get('en_name');
-        this.item = this.service.getByEnName(en_name);
+        this.sub = this._route.params.subscribe(params=>{
+            let en_name:string = params['en_name'];
+            this.item = this.service.getByEnName(en_name);
+        });
+    }
+
+    ngOnDestroy() {
+        this.sub.unsubscribe();
     }
 
     goBack() {
@@ -31,7 +38,6 @@ export class ShopOtherDetailComponent implements OnInit {
     }
 
     buy(en_name:string){
-        let link = ['BuyForm', { en_name:en_name  }];
-        this._router.navigate(link);
+        this._router.navigate(['/shop/buy/', en_name]);
     }
 }

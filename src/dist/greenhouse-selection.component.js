@@ -1,4 +1,4 @@
-System.register(['angular2/core', './services/greenhouse.service', './services/plants.service', 'angular2/router', "./models/plant", "./models/greenhouse"], function(exports_1, context_1) {
+System.register(['@angular/core', './services/greenhouse.service', './services/plants.service', '@angular/router', "./models/plant", "./models/greenhouse"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -35,20 +35,26 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
             }],
         execute: function() {
             GreenHouseSelectionComponent = (function () {
-                function GreenHouseSelectionComponent(_plantService, greenhouseService, _routeParams, _router) {
+                function GreenHouseSelectionComponent(_plantService, greenhouseService, _route, _router) {
                     this._plantService = _plantService;
                     this.greenhouseService = greenhouseService;
-                    this._routeParams = _routeParams;
+                    this._route = _route;
                     this._router = _router;
                     this.areTheSame = false;
                     this.hasNotPlant = true;
                 }
                 GreenHouseSelectionComponent.prototype.ngOnInit = function () {
-                    var en_name = this._routeParams.get('en_name');
-                    var p = this._plantService.getByEnName(en_name);
-                    this.plant = new plant_1.Plant(p.name, p.en_name, p.ph, p.description, p.water, p.sun, p.dishes);
-                    this.greenhouse = this.greenhouseService.greenhouses[0];
-                    this.onChangeGreenHouse(this.greenhouseService.greenhouses[0].id);
+                    var _this = this;
+                    this.sub = this._route.params.subscribe(function (params) {
+                        var en_name = params['en_name'];
+                        var p = _this._plantService.getByEnName(en_name);
+                        _this.plant = new plant_1.Plant(p.name, p.en_name, p.ph, p.description, p.water, p.sun, p.dishes);
+                        _this.greenhouse = _this.greenhouseService.greenhouses[0];
+                        _this.onChangeGreenHouse(_this.greenhouseService.greenhouses[0].id);
+                    });
+                };
+                GreenHouseSelectionComponent.prototype.ngOnDestroy = function () {
+                    this.sub.unsubscribe();
                 };
                 GreenHouseSelectionComponent.prototype.goBack = function () {
                     window.history.back();
@@ -74,8 +80,7 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
                     this.areTheSame = true;
                 };
                 GreenHouseSelectionComponent.prototype.buy = function () {
-                    var link = ['Shop'];
-                    this._router.navigate(link);
+                    this._router.navigate(['/shop']);
                 };
                 GreenHouseSelectionComponent = __decorate([
                     core_1.Component({
@@ -84,7 +89,7 @@ System.register(['angular2/core', './services/greenhouse.service', './services/p
                         styleUrls: ['styles/greenhouse-selection.component.css'],
                         providers: [greenhouse_service_1.GreenhouseService, plants_service_1.PlantsService]
                     }), 
-                    __metadata('design:paramtypes', [plants_service_1.PlantsService, greenhouse_service_1.GreenhouseService, router_1.RouteParams, router_2.Router])
+                    __metadata('design:paramtypes', [plants_service_1.PlantsService, greenhouse_service_1.GreenhouseService, router_1.ActivatedRoute, router_2.Router])
                 ], GreenHouseSelectionComponent);
                 return GreenHouseSelectionComponent;
             }());

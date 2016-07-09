@@ -1,26 +1,24 @@
-<form>
-    <div class="next-to chart-bottom">
-        <div class="left-margin">
-            <div><h3>Моля избере парник</h3></div>
-            <select id="ghouse" onchange="loadAfterSelect();" class="form-control">
-                <option value="restaurant">Парник в ресторанта</option>
-                <option value="home" >Парник в дома</option>
-            </select>
-            <div><h3>Моля избере данни</h3></div>
-            <div *ngFor="let filter of filters" class="[ form-group ]" onclick="loadChartFromData();">
-                <input type="checkbox" name="fancy-checkbox-success-custom-icons"
-                       id="{{filter.id}}" autocomplete="off"/>
-                <div class="[ btn-group ]">
-                    <label attr.for="{{filter.id}}" class="[ btn btn-success ]" >
-                        <span class="[ glyphicon glyphicon-plus ]"></span>
-                        <span class="[ glyphicon glyphicon-minus ]"></span>
-                    </label>
-                    <label style="width:120px;" attr.for="{{filter.id}}" class="[ btn btn-default active ]">
-                        {{filter.name}}
-                    </label>
-                </div>
+<div class="next-to chart-bottom">
+    <div class="left-margin">
+        <div><h3>Моля изберете парник</h3></div>
+        <select id="ghouse" onchange="loadAfterSelect();" class="form-control">
+            <option value="restaurant">Парник в ресторанта</option>
+            <option value="home" >Парник в дома</option>
+        </select>
+        <div><h3>Моля избере данни</h3></div>
+        <div *ngFor="let filter of filters" class="[ form-group ]" onclick="loadChartFromData();">
+            <input type="checkbox" name="fancy-checkbox-success-custom-icons"
+                   id="{{filter.id}}" autocomplete="off"/>
+            <div class="[ btn-group ]">
+                <label attr.for="{{filter.id}}" class="[ btn btn-success ]" >
+                    <span class="[ glyphicon glyphicon-plus ]"></span>
+                    <span class="[ glyphicon glyphicon-minus ]"></span>
+                </label>
+                <label style="width:120px;" attr.for="{{filter.id}}" class="[ btn btn-default active ]">
+                    {{filter.name}}
+                </label>
             </div>
         </div>
-        <div id="chart_div" class="chart-style"><h3 style="margin: 25%;"><i>Ще се визуализира след избора!</i></h3></div>
     </div>
-</form>
+    <div id="chart_div" class="chart-style"><h3 style="margin: 25%;"><i>Ще се визуализира след избора!</i></h3></div>
+</div>

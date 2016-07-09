@@ -1,4 +1,4 @@
-import {Component,Output,EventEmitter,OnInit} from 'angular2/core';
+import {Component,Output,EventEmitter,OnInit} from '@angular/core';
 
 @Component({
     selector: "sg-select-type",

@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router', "./plant-detail.component", "./greenhouse-selection.component", './shop-plant-detail.component', './shop-other-detail.component', "./buy-form.component"], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/router', "./notification.component", "./plants.component", "./greenhouse.component", "./shop.component", "./data.component", "./plant-detail.component", "./greenhouse-selection.component", "./shop-plant-detail.component", "./shop-other-detail.component", "./buy-form.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/router', "./plant-detail.component",
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, plant_detail_component_1, greenhouse_selection_component_1, shop_plant_detail_component_1, shop_other_detail_component_1, buy_form_component_1;
+    var core_1, router_1, notification_component_1, plants_component_1, greenhouse_component_1, shop_component_1, data_component_1, plant_detail_component_1, greenhouse_selection_component_1, shop_plant_detail_component_1, shop_other_detail_component_1, buy_form_component_1;
     var UserNavigationComponent;
     return {
         setters:[
@@ -19,6 +19,21 @@ System.register(['angular2/core', 'angular2/router', "./plant-detail.component",
             },
             function (router_1_1) {
                 router_1 = router_1_1;
+            },
+            function (notification_component_1_1) {
+                notification_component_1 = notification_component_1_1;
+            },
+            function (plants_component_1_1) {
+                plants_component_1 = plants_component_1_1;
+            },
+            function (greenhouse_component_1_1) {
+                greenhouse_component_1 = greenhouse_component_1_1;
+            },
+            function (shop_component_1_1) {
+                shop_component_1 = shop_component_1_1;
+            },
+            function (data_component_1_1) {
+                data_component_1 = data_component_1_1;
             },
             function (plant_detail_component_1_1) {
                 plant_detail_component_1 = plant_detail_component_1_1;
@@ -42,67 +57,18 @@ System.register(['angular2/core', 'angular2/router', "./plant-detail.component",
                 UserNavigationComponent = __decorate([
                     core_1.Component({
                         selector: 'sg-user-navigation-component',
-                        templateUrl: "./templates/user.navigation.component.html",
+                        templateUrl: './templates/user.navigation.component.html',
                         directives: [router_1.ROUTER_DIRECTIVES],
-                    }),
-                    router_1.RouteConfig([
-                        new router_1.AsyncRoute({
-                            path: '/notification',
-                            loader: function () { return System.import('dist/notification.component').then(function (m) { return m.NotificationComponent; }); },
-                            name: 'Notification',
-                            useAsDefault: true
-                        }),
-                        new router_1.AsyncRoute({
-                            path: '/plants',
-                            loader: function () { return System.import('dist/plants.component').then(function (m) { return m.PlantsComponent; }); },
-                            name: 'Plants',
-                        }),
-                        new router_1.AsyncRoute({
-                            path: '/greenhouse',
-                            loader: function () { return System.import('dist/greenhouse.component').then(function (m) { return m.GreenHouseComponent; }); },
-                            name: 'GreenHouse'
-                        }),
-                        new router_1.AsyncRoute({
-                            path: '/data',
-                            loader: function () { return System.import('dist/data.component').then(function (m) { return m.DataComponent; }); },
-                            name: 'Data'
-                        }),
-                        new router_1.AsyncRoute({
-                            path: '/shop',
-                            loader: function () { return System.import('dist/shop.component').then(function (m) { return m.ShopComponent; }); },
-                            name: 'Shop'
-                        }),
-                        {
-                            path: '/detail/:en_name',
-                            name: 'PlantDetail',
-                            component: plant_detail_component_1.PlantDetailComponent
-                        },
-                        {
-                            path: '/selection/:en_name',
-                            name: 'GreenhouseSelection',
-                            component: greenhouse_selection_component_1.GreenHouseSelectionComponent
-                        },
-                        {
-                            path: '/shop/plant/:en_name',
-                            name: 'ShopPlantDetail',
-                            component: shop_plant_detail_component_1.ShopPlantDetailComponent
-                        },
-                        {
-                            path: '/shop/other/:en_name',
-                            name: 'ShopOtherDetail',
-                            component: shop_other_detail_component_1.ShopOtherDetailComponent
-                        },
-                        {
-                            path: '/shop/buy/:en_name',
-                            name: 'BuyForm',
-                            component: buy_form_component_1.BuyFormComponent
-                        }
-                    ]), 
+                        precompile: [notification_component_1.NotificationComponent, plants_component_1.PlantsComponent, greenhouse_component_1.GreenHouseComponent, shop_component_1.ShopComponent,
+                            data_component_1.DataComponent, plant_detail_component_1.PlantDetailComponent, greenhouse_selection_component_1.GreenHouseSelectionComponent, shop_plant_detail_component_1.ShopPlantDetailComponent,
+                            shop_other_detail_component_1.ShopOtherDetailComponent, buy_form_component_1.BuyFormComponent]
+                    }), 
                     __metadata('design:paramtypes', [])
                 ], UserNavigationComponent);
                 return UserNavigationComponent;
             }());
             exports_1("UserNavigationComponent", UserNavigationComponent);
+            ;
         }
     }
 });

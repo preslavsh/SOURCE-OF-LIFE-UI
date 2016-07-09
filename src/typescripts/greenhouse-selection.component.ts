@@ -1,10 +1,10 @@
-import {Component,OnInit} from 'angular2/core';
+import {Component,OnInit,OnDestroy} from '@angular/core';
 import {GreenhouseService} from './services/greenhouse.service';
 import {PlantsService} from './services/plants.service';
-import {RouteParams} from 'angular2/router';
+import {ActivatedRoute} from '@angular/router';
 import {Plant} from "./models/plant";
 import {Greenhouse} from "./models/greenhouse";
-import {Router} from "angular2/router";
+import {Router} from "@angular/router";
 
 @Component({
     selector: "sg-greenhouse-selection",
@@ -12,25 +12,32 @@ import {Router} from "angular2/router";
     styleUrls: ['styles/greenhouse-selection.component.css'],
     providers: [GreenhouseService, PlantsService]
 })
-export class GreenHouseSelectionComponent implements OnInit {
+export class GreenHouseSelectionComponent implements OnInit,OnDestroy {
 
     public plant:Plant;
     public greenhouse:Greenhouse;
     public areTheSame:boolean=false;
     public hasNotPlant:boolean=true;
+    private sub:any;
 
     constructor(private _plantService:PlantsService,
                 public  greenhouseService:GreenhouseService,
-                private _routeParams:RouteParams,
+                private _route:ActivatedRoute,
                 private _router:Router) {
     }
 
     ngOnInit() {
-        let en_name:string = this._routeParams.get('en_name');
-        let p = this._plantService.getByEnName(en_name);
-        this.plant = new Plant(p.name, p.en_name,p.ph,p.description,p.water,p.sun, p.dishes);
-        this.greenhouse = this.greenhouseService.greenhouses[0];
-        this.onChangeGreenHouse(this.greenhouseService.greenhouses[0].id);
+        this.sub = this._route.params.subscribe(params=>{
+            let en_name:string = params['en_name'];
+            let p = this._plantService.getByEnName(en_name);
+            this.plant = new Plant(p.name, p.en_name,p.ph,p.description,p.water,p.sun, p.dishes);
+            this.greenhouse = this.greenhouseService.greenhouses[0];
+            this.onChangeGreenHouse(this.greenhouseService.greenhouses[0].id);
+        });
+    }
+
+    ngOnDestroy() {
+        this.sub.unsubscribe();
     }
 
     goBack() {
@@ -60,7 +67,6 @@ export class GreenHouseSelectionComponent implements OnInit {
 
 
     buy(){
-        let link = ['Shop'];
-        this._router.navigate(link);
+        this._router.navigate(['/shop']);
     }
 }

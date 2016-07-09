@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./services/shop.service", "./services/consumables.service", "./services/greenhouse-models.service", "./services/plants.service", "./pipes/capital.case.pipe", "./pipes/filter-by-name-cat.pipe", "./directives/select-type.directive", "angular2/router"], function(exports_1, context_1) {
+System.register(['@angular/core', "./services/shop.service", "./services/consumables.service", "./services/greenhouse-models.service", "./services/plants.service", "./pipes/capital.case.pipe", "./pipes/filter-by-name-cat.pipe", "./directives/select-type.directive", "@angular/router"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -50,17 +50,14 @@ System.register(['angular2/core', "./services/shop.service", "./services/consuma
                 }
                 ShopComponent.prototype.gotoDetail = function (en_name, category) {
                     if (category === 'plant') {
-                        var link = ['ShopPlantDetail', { en_name: en_name }];
-                        this._router.navigate(link);
+                        this._router.navigate(['/shop/plant/', en_name]);
                     }
                     else if (category === 'greenhouse' || category === 'consumables') {
-                        var link = ['ShopOtherDetail', { en_name: en_name }];
-                        this._router.navigate(link);
+                        this._router.navigate(['/shop/other/', en_name]);
                     }
                 };
                 ShopComponent.prototype.buy = function (en_name) {
-                    var link = ['BuyForm', { en_name: en_name }];
-                    this._router.navigate(link);
+                    this._router.navigate(['/shop/buy/', en_name]);
                 };
                 __decorate([
                     core_1.Input(), 
@@ -68,8 +65,8 @@ System.register(['angular2/core', "./services/shop.service", "./services/consuma
                 ], ShopComponent.prototype, "select", void 0);
                 ShopComponent = __decorate([
                     core_1.Component({
-                        selector: 'sg-shop-component',
-                        templateUrl: './templates/shop.component.html',
+                        selector: "sg-shop-component",
+                        templateUrl: "./templates/shop.component.html",
                         styleUrls: ['./styles/shop.component.css'],
                         directives: [select_type_directive_1.SelectTypeDirective],
                         providers: [consumables_service_1.ConsumablesService, greenhouse_models_service_1.GreenhouseModelsService, plants_service_1.PlantsService, shop_service_1.ShopService],

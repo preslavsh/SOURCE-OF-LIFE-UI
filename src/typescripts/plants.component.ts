@@ -1,15 +1,15 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 import {PlantsService} from './services/plants.service';
 import {CapitalCasePipe} from "./pipes/capital.case.pipe";
 import {FilterByNamePipe} from "./pipes/filter-by-name.pipe";
-import {Router} from "angular2/router";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'sg-plants-component',
     templateUrl: './templates/plants.component.html',
     styleUrls: ['./styles/plants_page_styles.css'],
     providers: [PlantsService],
-    pipes: [CapitalCasePipe, FilterByNamePipe]
+    pipes: [CapitalCasePipe, FilterByNamePipe],
 })
 export class PlantsComponent {
     public nameFilter:string = "";
@@ -20,13 +20,11 @@ export class PlantsComponent {
     }
 
     gotoDetail(en_name:string) {
-        let link = ['PlantDetail', { en_name:en_name  }];
-        this._router.navigate(link);
+        this._router.navigate(['/detail',en_name]);
     }
 
 
     buy(en_name:string){
-        let link = ['BuyForm', { en_name:en_name  }];
-        this._router.navigate(link);
+        this._router.navigate(['/shop/buy', en_name  ]);
     }
 }

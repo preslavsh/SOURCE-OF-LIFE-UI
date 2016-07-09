@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./services/plants.service", "angular2/router", "./services/shop.service", "./services/greenhouse-models.service", "./services/consumables.service"], function(exports_1, context_1) {
+System.register(['@angular/core', "./services/plants.service", "@angular/router", "./services/shop.service", "./services/greenhouse-models.service", "./services/consumables.service"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -34,17 +34,22 @@ System.register(['angular2/core', "./services/plants.service", "angular2/router"
             }],
         execute: function() {
             BuyFormComponent = (function () {
-                function BuyFormComponent(service, _routeParams, _router) {
+                function BuyFormComponent(service, _route) {
                     this.service = service;
-                    this._routeParams = _routeParams;
-                    this._router = _router;
+                    this._route = _route;
                     this.city = "1";
                     this.count = 1;
                     this.hasOrdered = false;
                 }
                 BuyFormComponent.prototype.ngOnInit = function () {
-                    var en_name = this._routeParams.get('en_name');
-                    this.item = this.service.getByEnName(en_name);
+                    var _this = this;
+                    this.sub = this._route.params.subscribe(function (params) {
+                        var en_name = params['en_name'];
+                        _this.item = _this.service.getByEnName(en_name);
+                    });
+                };
+                BuyFormComponent.prototype.ngOnDestroy = function () {
+                    this.sub.unsubscribe();
                 };
                 BuyFormComponent.prototype.goBack = function () {
                     window.history.back();
@@ -61,7 +66,7 @@ System.register(['angular2/core', "./services/plants.service", "angular2/router"
                         styleUrls: ['styles/buy-form.component.css'],
                         providers: [consumables_service_1.ConsumablesService, greenhouse_models_service_1.GreenhouseModelsService, plants_service_1.PlantsService, shop_service_1.ShopService]
                     }), 
-                    __metadata('design:paramtypes', [shop_service_1.ShopService, router_1.RouteParams, router_1.Router])
+                    __metadata('design:paramtypes', [shop_service_1.ShopService, router_1.ActivatedRoute])
                 ], BuyFormComponent);
                 return BuyFormComponent;
             }());

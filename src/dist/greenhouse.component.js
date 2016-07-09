@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./services/plants.service", "./services/greenhouse.service", "./models/greenhouse", "./models/plant", "angular2/router"], function(exports_1, context_1) {
+System.register(['@angular/core', "./services/plants.service", "./services/greenhouse.service", "./models/greenhouse", "./models/plant", "@angular/router"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -56,12 +56,10 @@ System.register(['angular2/core', "./services/plants.service", "./services/green
                     this.greenhouseService.renameGreenhouse(this.greenhouse.id, this.greenhouse.name);
                 };
                 GreenHouseComponent.prototype.gotoPlants = function () {
-                    var link = ['Plants'];
-                    this._router.navigate(link);
+                    this._router.navigate(['/plants']);
                 };
                 GreenHouseComponent.prototype.buy = function () {
-                    var link = ['Shop'];
-                    this._router.navigate(link);
+                    this._router.navigate(['/shop']);
                 };
                 GreenHouseComponent = __decorate([
                     core_1.Component({

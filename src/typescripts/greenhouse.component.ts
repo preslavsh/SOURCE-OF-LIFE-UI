@@ -1,9 +1,9 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 import {PlantsService} from "./services/plants.service";
 import {GreenhouseService} from "./services/greenhouse.service";
 import {Greenhouse} from "./models/greenhouse";
 import {Plant} from "./models/plant";
-import {Router} from "angular2/router";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'sg-greenhouse-component',
@@ -38,12 +38,10 @@ export class GreenHouseComponent {
     }
 
     gotoPlants() {
-        let link = ['Plants'];
-        this._router.navigate(link);
+        this._router.navigate(['/plants']);
     }
 
     buy(){
-        let link = ['Shop'];
-        this._router.navigate(link);
+        this._router.navigate(['/shop']);
     }
 }

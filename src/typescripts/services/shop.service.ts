@@ -1,4 +1,4 @@
-import {Injectable} from 'angular2/core';
+import {Injectable} from '@angular/core';
 import {ConsumablesService} from "./consumables.service";
 import {GreenhouseModelsService} from "./greenhouse-models.service";
 import {PlantsService} from "./plants.service";
